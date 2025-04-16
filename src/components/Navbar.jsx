@@ -340,7 +340,7 @@ const Navbar = () => {
             onClick={scrollToTop}
             className={`fixed ${
               windowWidth <= 640 ? "bottom-2 right-4 p-2" : "bottom-8 right-8 p-3"
-            } bg-blue-700 hover:bg-blue-800 text-white rounded-full shadow-lg z-50`}
+            } bg-blue-800 hover:bg-blue-800 text-white rounded-full shadow-lg z-50`}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             aria-label="Scroll to top"

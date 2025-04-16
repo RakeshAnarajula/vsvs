@@ -80,8 +80,8 @@ const Footer = () => {
             <FooterSection title="ABOUT US" icon={Info}>
               <FooterLink to="/resources/blog">Blog</FooterLink>
               <FooterLink to="/resources/Casestudies">Casestudies</FooterLink>
-              <FooterLink to="/privacy-policy">Privacy Policy</FooterLink>
-              <FooterLink to="/terms-of-service">Terms of Service</FooterLink>
+              <FooterLink to="/PrivacyPolicy">Privacy Policy</FooterLink>
+              <FooterLink to="/Termsofservices">Terms of Service</FooterLink>
             </FooterSection>
             <FooterSection title="SERVICES" icon={Briefcase}>
               <FooterLink to="/services/ERPsolutions">ERP Solutions</FooterLink>
@@ -128,7 +128,7 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
         >
-          <p>© {currentYear} VSVS Technology. All rights reserved.</p>
+          <p>© {currentYear} VSVS TECH WAVES. All rights reserved.</p>
           <div className="mt-4 md:mt-0 flex items-center">
             <span className="text-gray-400">Designed and developed by </span>
             <motion.a
