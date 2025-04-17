@@ -36,33 +36,24 @@ const testimonials = [
     image: "/Advanced Reporting.avif"
   },
 ];
-
 const Testimonials = () => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    // Auto-rotate testimonials
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % testimonials.length);
     }, 3000);
     return () => clearInterval(timer);
   }, []);
-
   const handleDotClick = (idx) => {
     setIndex(idx);
   };
-
   const current = testimonials[index];
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-10 px-6 md:px-8 lg:px-12">
-      {/* Decorative Elements */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
       <div className="absolute bottom-20 right-10 w-64 h-64 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
-
-      {/* Container */}
       <div className="max-w-6xl mx-auto relative z-10">
-        {/* Title Section */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-3xl font-bold text-blue-900 mb-4 inline-block relative">
             Client Testimonials
@@ -71,11 +62,8 @@ const Testimonials = () => {
             Hear what industry leaders say about our enterprise SAP & ERP solutions
           </p>
         </div>
-
-        {/* Testimonial Card */}
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-10">
           <div className="grid md:grid-cols-5 ">
-            {/* Image Side - Fixed for mobile view */}
             <div className="col-span-5 md:col-span-2 bg-blue-900 min-h-40 md:min-h-full">
               <div className="flex items-center justify-center h-full py-8 md:py-0">
                 <div className="relative w-40 h-40 md:w-48 md:h-48 lg:w-64 lg:h-64">
@@ -89,8 +77,6 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-
-            {/* Content Side */}
             <div className="col-span-5 md:col-span-3 p-8 md:p-12 flex flex-col justify-center">
               <div className="text-5xl text-blue-200 font-serif">"</div>
               <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-8">
@@ -103,8 +89,6 @@ const Testimonials = () => {
             </div>
           </div>
         </div>
-
-        {/* Dots indicator */}
         <div className="flex justify-center gap-2">
           {testimonials.map((_, idx) => (
             <button
@@ -121,5 +105,4 @@ const Testimonials = () => {
     </div>
   );
 };
-
 export default Testimonials;

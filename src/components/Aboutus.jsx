@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const AboutUs = () => {
   return (
-    <section className="bg-white py-20 px-6 sm:px-12 lg:px-24" id="about-us">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <section className="bg-white py-10 px-6 sm:px-12 lg:px-24" id="about-us">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center overflow-hidden">
 
         {/* Text Content */}
         <motion.div
