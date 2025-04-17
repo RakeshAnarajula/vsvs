@@ -345,7 +345,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.9 }}
             aria-label="Scroll to top"
           >
-            <ArrowUp size={windowWidth <= 640 ? 20 : 24} />
+            <ArrowUp size={windowWidth <= 640 ? 40 : 24} />
           </motion.button>
         )}
       </AnimatePresence>
