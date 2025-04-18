@@ -155,7 +155,7 @@ const Careers = () => {
         </div>
         <p className="text-center mt-10 text-lg text-gray-700">
           <strong>To apply, please send your resume/CV to</strong>{' '}
-          <a href="mailto:info@virtutechsolutions.com" className="text-blue-700 underline">
+          <a href="mailto:HR@vsvstechwaves.com" className="text-blue-700 underline">
             HR@vsvstechwaves.com
           </a>
         </p>
