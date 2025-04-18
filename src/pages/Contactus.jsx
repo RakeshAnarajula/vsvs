@@ -47,7 +47,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="min-h-screen py-10 px-4 sm:px-6 lg:px-10">
+    <div className="py-10 px-4 sm:px-6 lg:px-10">
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-2 gap-8 bg-gradient-to-br from-blue-900 to-blue-900 shadow-xl rounded-2xl overflow-hidden border border-blue-700 min-h-[500px]">
           <div className="bg-gradient-to-br from-blue-900 to-blue-900 p-10 text-white flex flex-col justify-between relative">
@@ -55,16 +55,16 @@ const ContactPage = () => {
               <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
-                  <Mail className="w-6 h-6 text-cyan-300" />
+                  <Mail className="w-6 h-6 text-blue-300" />
                   <span className="text-gray-200">HR@vsvstechwaves.com</span>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <Phone className="w-6 h-6 text-cyan-300" />
+                  <Phone className="w-6 h-6 text-blue-300" />
                   <span className="text-gray-200">+914040897477</span>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <MapPin className="w-6 h-6 text-cyan-300" />
-                  <span className="text-gray-200">Plot No.57, Ganesh Towers, Kakatiyanagar, Ashok Nagar, R C Puram, Telangana - 502032</span>
+                <MapPin size={24} className="text-blue-300 mr-2 mb-6 flex-shrink-0" />
+                <span className="text-gray-200">Plot No.57, Ganesh Towers, Kakatiyanagar, Ashok Nagar, R C Puram, Telangana - 502032</span>
                 </div>
               </div>
             </div>
