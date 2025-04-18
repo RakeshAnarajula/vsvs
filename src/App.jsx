@@ -7,15 +7,14 @@ import Loader from "./components/Loader";
 import Hero from "./components/Hero";
 import Aboutus from "./components/Aboutus";
 import OurServices from "./components/OurServices";
-import Testinomials from "./components/Testinomials";
+import Card from "./components/Card";
 
 import BusinessOne from './pages/services/Businessone';
 import Consulting from './pages/services/Consulting';
 import ERPsolutions from './pages/services/ERPsolutions';
 import Implementation from './pages/services/Implementation';
 import SAPanalytics from './pages/services/SAPanalytics';
-import Blog from './pages/resources/Blog';
-import Casestudies from './pages/resources/Casestudies';
+import Resources from "./pages/Resources";
 import Carrers from './pages/Carrers';
 import Contactus from './pages/Contactus';
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -50,7 +49,7 @@ const App = () => {
                   <Hero />
                   <Aboutus />
                   <OurServices />
-                  <Testinomials />
+                  <Card />
                 </>
               }
             />
@@ -60,8 +59,7 @@ const App = () => {
             <Route path="/services/ERPsolutions" element={<ERPsolutions />} />
             <Route path="/services/Implementation" element={<Implementation />} />
             <Route path="/services/SAPanalytics" element={<SAPanalytics />} />
-            <Route path="/resources/blog" element={<Blog />} />
-            <Route path="/resources/Casestudies" element={<Casestudies />} />
+            <Route path="/Resources" element={<Resources />} />
             <Route path="/carrers" element={<Carrers />} />
             <Route path="/contactus" element={<Contactus />} />
             <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />

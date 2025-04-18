@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+
 const values = [
   {
     img: '/Unlock Insights with SAP Analytics.jpg',
@@ -15,39 +16,6 @@ const values = [
     img: '/team work.jpg',
     title: 'Ambition',
     description: 'We believe in dreaming big and building the future.',
-  },
-];
-
-const employeeBenefits = [
-  {
-    img: 'health and wellness.avif',
-    title: 'Health & Wellness',
-    description: 'Comprehensive health coverage, gym memberships, and mental health support.',
-  },
-  {
-    img: '/Paid Time Off.avif',
-    title: 'Paid Time Off',
-    description: 'Generous paid vacation, sick days, and holidays for work-life balance.',
-  },
-  {
-    img: '/Retirement Plans.jpg',
-    title: 'Retirement Plans',
-    description: 'Employer-funded retirement plans and financial planning resources.',
-  },
-  {
-    img: '/Professional Development.avif',
-    title: 'Professional Development',
-    description: 'Budget for conferences, workshops, and continuing education opportunities.',
-  },
-  {
-    img: '/Remote Work Options.jpg',
-    title: 'Remote Work Options',
-    description: 'Flexible work arrangements including hybrid and fully remote positions.',
-  },
-  {
-    img: '/Family Support.jpg',
-    title: 'Family Support',
-    description: 'Parental leave, childcare assistance, and family-friendly policies.',
   },
 ];
 
@@ -110,6 +78,7 @@ const Careers = () => {
           Join a team that's shaping enterprise solutions with SAP and ERP excellence.
         </p>
       </motion.section>
+
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -139,7 +108,7 @@ const Careers = () => {
         className="max-w-7xl mx-auto"
       >
         <h2 className="text-3xl font-bold text-blue-800 mb-1 text-center">Work Culture</h2>
-        <div className="border-t-3 border-blue-800 w-30 mx-auto mb-6"></div> 
+        <div className="border-t-3 border-blue-800 w-30 mx-auto mb-6"></div>
         <p className="text-center text-gray-600 max-w-4xl mx-auto mb-10">
           We are always looking to add talented and motivated individuals to our dedicated workforce. If you
           are a team player, passionate about what you do, and are thrilled at the prospect of solving problems,
@@ -147,7 +116,7 @@ const Careers = () => {
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {workCulture.map((item, i) => (
-            <motion.div 
+            <motion.div
               key={i}
               className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition"
               whileHover={{ y: -5 }}
@@ -158,54 +127,41 @@ const Careers = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-blue-800 text-center">{item.title}</h3>
-              <p className="text-gray-600 mt-2 text-center">
-                {item.description}
-              </p>
+              <p className="text-gray-600 mt-2 text-center">{item.description}</p>
             </motion.div>
           ))}
         </div>
       </motion.section>
       <motion.section
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="max-w-6xl mx-auto text-center"
+        className="max-w-6xl mx-auto"
       >
-        <h2 className="text-3xl font-bold text-blue-800 mb-2">Employee Benefits</h2>
-        <div className="border-t-3 border-blue-800 w-30 mx-auto mb-6"></div>  
-        <div className="grid md:grid-cols-3 gap-8">
-          {employeeBenefits.map((benefit, i) => (
-            <div key={i} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-              <img
-                src={benefit.img}
-                alt={benefit.title}
-                className="rounded-lg mb-4 w-full h-48 object-cover"
-              />
-              <h3 className="text-xl font-semibold text-blue-800">{benefit.title}</h3>
-              <p className="text-gray-600 mt-2">{benefit.description}</p>
-            </div>
-          ))}
+        <h2 className="text-3xl font-bold text-blue-800 text-center mb-6">Empowering SAP Careers</h2>
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <img src="/Business Intelligence & Analytics.avif" alt="SAP Analytics Team" className="rounded-lg shadow-md" />
+          <div>
+            <p className="text-gray-700 text-lg mb-4">
+              At vsvs tech waves, we specialize in SAP-powered transformation. Whether you're a FICO wizard, ABAP developer,
+              or a BW/4HANA data scientist, we provide an ecosystem that supports learning, innovation, and high-impact delivery.
+            </p>
+            <ul className="list-disc pl-6 text-gray-700 space-y-2">
+              <li>Work on S/4HANA cloud and on-premise deployments</li>
+              <li>Get access to internal SAP sandbox and demo systems</li>
+              <li>Engage in global SAP rollouts and support projects</li>
+              <li>Collaborate with experts across modules and industries</li>
+            </ul>
+          </div>
         </div>
-      </motion.section>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        className="max-w-4xl mx-auto text-center"
-      >
-        <h2 className="text-2xl md:text-3xl font-bold mb-2">Ready to Start Your Journey?</h2>
-        <p className="text-xl text-gray-600 mb-6">
-          Let's collaborate to drive business transformation through tailored SAP solutions.
+        <p className="text-center mt-10 text-lg text-gray-700">
+          <strong>To apply, please send your resume/CV to</strong>{' '}
+          <a href="mailto:info@virtutechsolutions.com" className="text-blue-700 underline">
+            HR@vsvstechwaves.com
+          </a>
         </p>
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="bg-blue-800 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-900 transition-colors"
-        >
-          Schedule a Consultation
-        </motion.button>
-      </motion.div>
+      </motion.section>
     </div>
   );
 };
+
 export default Careers;

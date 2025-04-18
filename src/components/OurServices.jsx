@@ -93,7 +93,7 @@ const OurServices = () => {
   };
 
   return (
-    <section className="py-12 bg-gradient-to-b from-white to-blue-50">
+    <section className=" py-4 bg-gradient-to-b from-white to-blue-50">
       <div className="max-w-8xl mx-auto px-4 sm:px-4 lg:px-20">
         <motion.div
           className="text-center mb-10"
@@ -117,7 +117,7 @@ const OurServices = () => {
           {services.map((service) => (
             <motion.div
               key={service.id}
-              className="bg-blue-900 text-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6"
+              className="bg-blue-900 text-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6"
               variants={cardVariants}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >

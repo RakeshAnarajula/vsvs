@@ -1,7 +1,5 @@
-
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useEffect, useState } from "react";
-
 export default function Hero() {
   const rotatingContent = [
     {
@@ -25,20 +23,17 @@ export default function Hero() {
       description: "Real-time insights and data visualization for better decisions.",
     }
   ];
-
   const [currentContent, setCurrentContent] = useState(0);
   const [windowSize, setWindowSize] = useState({
     width: typeof window !== 'undefined' ? window.innerWidth : 1200,
     height: typeof window !== 'undefined' ? window.innerHeight : 800
   });
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentContent((prev) => (prev + 1) % rotatingContent.length);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
-
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const handleResize = () => {
@@ -51,7 +46,6 @@ export default function Hero() {
       return () => window.removeEventListener('resize', handleResize);
     }
   }, []);
-
   const imageSet = [
     "/consulting implementation.avif",
     "/consulting services.jpg",
@@ -81,27 +75,24 @@ export default function Hero() {
     const getImageSize = () => {
       if (windowSize.width < 640) return { width: 190, height: 190 };
       if (windowSize.width < 1024) return { width: 230, height: 200 };
-      return { width: 350, height: 220 }; // 🔽 reduced height
+      return { width: 350, height: 220 }; 
     };
-
     const imageSize = getImageSize();
-    const gap = 20; // 🔽 reduced vertical spacing
+    const gap = 20; 
     const duration = 400;
     const allLanes = [];
-
     for (let lane = 0; lane < totalLanes; lane++) {
       const fullImageSet = [...imageSet, ...imageSet];
       const isEven = lane % 2 === 0;
       const scrollDistance = (imageSize.height + gap) * imageSet.length;
-
       allLanes.push(
         <div
           key={lane}
           className="overflow-hidden"
           style={{
             width: `${imageSize.width}px`,
-            height: "90vh", // 🔽 reduced overall screen height
-            marginLeft: lane === 0 ? '0' : `${(windowSize.width / totalLanes) * 0.05}px`, // 🔽 reduced horizontal space between lanes
+            height: "90vh", 
+            marginLeft: lane === 0 ? '0' : `${(windowSize.width / totalLanes) * 0.05}px`, 
           }}
         >
           <motion.div
@@ -153,23 +144,18 @@ export default function Hero() {
       </div>
     );
   };
-
   return (
-    <div className="h-[90vh] w-full flex flex-col items-center justify-center px-6 py-10 overflow-hidden relative"> {/* 🔽 reduced screen height */}
+    <div className="h-[90vh] w-full flex flex-col items-center justify-center px-6 py-10 overflow-hidden relative"> 
       {renderMarqueeLanes()}
       <div className="absolute inset-0 bg-black opacity-85 z-20" />
-
-      {/* 🔹 Main Title */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white text-center z-30 mb-8"
       >
-        VSVS Tech Waves
+        VSVS TECH WAVES
       </motion.h2>
-
-      {/* 🔹 Rotating Text Block */}
       <div className="max-w-6xl mx-auto text-center z-30 relative">
         <div className="min-h-48 flex items-center justify-center">
           <AnimatePresence mode="wait">

@@ -27,6 +27,7 @@ const blogPosts = [
     date: 'March 15, 2025',
   },
 ];
+
 const extraContent = [
   {
     title: 'Complete Guide to ERP Implementation',
@@ -147,9 +148,7 @@ const Blog = () => {
         ))}
       </section>
       <section className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-blue-800 mb-10">
-          Explore More About ERP & SAP
-        </h2>
+        <h2 className="text-3xl font-bold text-blue-800 mb-10">Explore More About ERP & SAP</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {extraContent.map((item, index) => (
             <motion.div
@@ -163,6 +162,66 @@ const Blog = () => {
               <div className="flex justify-center mb-4">{item.icon}</div>
               <h3 className="text-xl font-semibold text-blue-800">{item.title}</h3>
               <p className="text-gray-600 mt-2">{item.description}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+      <section className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold text-blue-800 text-center mb-10">
+          SAP Resource Spotlight
+        </h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: 'SAP Fiori Design System',
+              desc: 'Create intuitive user experiences with SAP Fiori. Explore the UI/UX toolkit trusted by enterprises worldwide.',
+              img: '/SAP Fiori Design System.jpg',
+            },
+            {
+              title: 'S/4HANA Migration Hub',
+              desc: 'Tools, best practices, and accelerators to move your legacy ERP to SAP S/4HANA with confidence.',
+              img: '/Migration Hub.avif',
+            },
+            {
+              title: 'SAP Analytics Cloud',
+              desc: 'Make real-time business decisions with smart dashboards, planning, and predictive analytics.',
+              img: '/SAP Analytics Cloud.avif',
+            },
+            {
+              title: 'Business Process Automation',
+              desc: 'Boost efficiency through intelligent RPA and workflow automation integrated within SAP.',
+              img: '/Business Process Automation.jpg',
+            },
+            {
+              title: 'SAP Integration Suite',
+              desc: 'Connect cloud, on-premise, and third-party systems seamlessly with SAP’s integration toolkit.',
+              img: '/SAP Integration Suite.avif',
+            },
+            {
+              title: 'Learning Journey: SAP BTP',
+              desc: 'Master the SAP Business Technology Platform with guided, role-based learning paths.',
+              img: '/Learning Journey SAP BTP.jpg',
+            },
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 group"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1, duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition duration-300"
+                />
+              </div>
+              <div className="p-5">
+                <h3 className="text-lg font-semibold text-blue-800 mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-sm">{item.desc}</p>
+              </div>
             </motion.div>
           ))}
         </div>

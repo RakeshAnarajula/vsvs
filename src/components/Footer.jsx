@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import {MapPin,Phone,Mail,Clock,Facebook,Twitter,Instagram,Linkedin,HomeIcon,Info,Briefcase,PhoneCall } from "lucide-react";
+import {Facebook, Twitter, Instagram, Linkedin,MapPin,} from "lucide-react";
+import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
+import { IoIosContact, IoIosMailUnread } from "react-icons/io";
+import { MdOutlinePhoneForwarded } from "react-icons/md";
+import { SiQuicklook } from "react-icons/si";
+import { FaServicestack } from "react-icons/fa6";
+
 const FooterSection = ({ title, icon: Icon, children }) => {
   return (
     <div className="mb-8 md:mb-0">
@@ -13,6 +19,7 @@ const FooterSection = ({ title, icon: Icon, children }) => {
     </div>
   );
 };
+
 const FooterLink = ({ to, children }) => {
   return (
     <Link
@@ -24,6 +31,7 @@ const FooterLink = ({ to, children }) => {
     </Link>
   );
 };
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -35,6 +43,7 @@ const Footer = () => {
       transition: { duration: 0.5 }
     }
   };
+
   return (
     <footer className="bg-gradient-to-br from-blue-900 to-blue-950 text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -57,7 +66,7 @@ const Footer = () => {
                   key={index}
                   href="#"
                   aria-label={Icon.name}
-                  className=" rounded-full p-2 transition-colors duration-300"
+                  className="rounded-full p-2 transition-colors duration-300"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 >
@@ -70,51 +79,48 @@ const Footer = () => {
             variants={itemVariants}
             className="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8"
           >
-            <FooterSection title="QUICK LINKS" icon={HomeIcon}>
+            <FooterSection title="COMPANY" icon={HiOutlineBuildingOffice2}>
               <FooterLink to="/">Home</FooterLink>
               <FooterLink to="/AboutUs">About us</FooterLink>
               <FooterLink to="/carrers">Careers</FooterLink>
               <FooterLink to="/contactus">Contact Us</FooterLink>
             </FooterSection>
-            <FooterSection title="CAREERS" icon={Info}>
-              <FooterLink to="/resources/blog">Blog</FooterLink>
-              <FooterLink to="/resources/Casestudies">Casestudies</FooterLink>
-              <FooterLink to="/PrivacyPolicy">Privacy Policy</FooterLink>
-              <FooterLink to="/Termsofservices">Terms of Service</FooterLink>
-            </FooterSection>
-            <FooterSection title="SERVICES" icon={Briefcase}>
+            <FooterSection title="SERVICES" icon={FaServicestack}>
               <FooterLink to="/services/ERPsolutions">ERP Solutions</FooterLink>
               <FooterLink to="/services/SAPanalytics">SAP Analytics</FooterLink>
               <FooterLink to="/services/Implementation">Implementation</FooterLink>
               <FooterLink to="/services/Businessone">Business One</FooterLink>
               <FooterLink to="/services/Consulting">Consulting</FooterLink>
             </FooterSection>
-            <FooterSection title="CONTACT US" icon={PhoneCall}>
+            <FooterSection title="QUICK LINKS" icon={SiQuicklook}>
+              <FooterLink to="/Resources">Resources</FooterLink>
+              <FooterLink to="/PrivacyPolicy">Privacy Policy</FooterLink>
+              <FooterLink to="/Termsofservices">Terms of Service</FooterLink>
+            </FooterSection>
+            <FooterSection title="CONTACT US" icon={IoIosContact}>
               <div className="space-y-3">
                 <div className="flex items-start">
                   <MapPin size={18} className="text-blue-400 mr-2 mt-1 flex-shrink-0" />
                   <p className="text-gray-300 text-sm">
-                    123 Tech Park, Silicon Valley<br />
-                    California, 94043, USA
+                    Plot No.57, Ganesh Towers, Kakatiyanagar, Ashok Nagar, <br /> R C Puram, <br />
+                    Telangana - 502032
                   </p>
                 </div>
                 <div className="flex items-center">
-                  <Phone size={18} className="text-blue-400 mr-2 flex-shrink-0" />
+                  <MdOutlinePhoneForwarded size={18} className="text-blue-400 mr-2 flex-shrink-0" />
                   <p className="text-gray-300 text-sm">
-                    +1 (555) 123-4567
+                    +91 4040 897477
                   </p>
                 </div>
                 <div className="flex items-center">
-                  <Mail size={18} className="text-blue-400 mr-2 flex-shrink-0" />
-                  <p className="text-gray-300 text-sm">
-                    info@vsvstech.com
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <Clock size={18} className="text-blue-400 mr-2 mt-1 flex-shrink-0" />
-                  <p className="text-gray-300 text-sm">
-                    Monday - Friday:<br />9:00 AM - 6:00 PM
-                  </p>
+                  <IoIosMailUnread size={18} className="text-blue-400 mr-2 flex-shrink-0" />
+                  <a 
+                    href="mailto:HR@vsvstechwaves.com" 
+                    className="text-gray-300 text-sm group relative hover:text-white transition-colors duration-300"
+                  >
+                    HR@vsvstechwaves.com
+                    <span className="absolute left-0 -bottom-0.5 h-0.5 bg-blue-400 w-0 group-hover:w-full transition-all duration-300"></span>
+                  </a>
                 </div>
               </div>
             </FooterSection>
@@ -146,4 +152,5 @@ const Footer = () => {
     </footer>
   );
 };
+
 export default Footer;

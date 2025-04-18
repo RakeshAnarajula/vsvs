@@ -9,6 +9,7 @@ const ContactPage = () => {
   });
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -20,6 +21,7 @@ const ContactPage = () => {
       [name]: '',
     }));
   };
+
   const validateForm = () => {
     const newErrors = {};
     if (!formData.name.trim()) newErrors.name = 'Name is required.';
@@ -32,6 +34,7 @@ const ContactPage = () => {
     if (!formData.message.trim()) newErrors.message = 'Message is required.';
     return newErrors;
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = validateForm();
@@ -42,9 +45,10 @@ const ContactPage = () => {
     console.log('Form Submitted', formData);
     setIsSubmitted(true);
   };
+
   return (
-    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto max-w-5xl">
+    <div className="min-h-screen py-10 px-4 sm:px-6 lg:px-10">
+      <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-2 gap-8 bg-gradient-to-br from-blue-900 to-blue-900 shadow-xl rounded-2xl overflow-hidden border border-blue-700 min-h-[500px]">
           <div className="bg-gradient-to-br from-blue-900 to-blue-900 p-10 text-white flex flex-col justify-between relative">
             <div>
@@ -52,15 +56,15 @@ const ContactPage = () => {
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <Mail className="w-6 h-6 text-cyan-300" />
-                  <span className="text-gray-200">info@vsvstech.com</span>
+                  <span className="text-gray-200">HR@vsvstechwaves.com</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Phone className="w-6 h-6 text-cyan-300" />
-                  <span className="text-gray-200">+4234567892</span>
+                  <span className="text-gray-200">+914040897477</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <MapPin className="w-6 h-6 text-cyan-300" />
-                  <span className="text-gray-200">Office</span>
+                  <span className="text-gray-200">Plot No.57, Ganesh Towers, Kakatiyanagar, Ashok Nagar, R C Puram, Telangana - 502032</span>
                 </div>
               </div>
             </div>
@@ -192,4 +196,5 @@ const ContactPage = () => {
     </div>
   );
 };
+
 export default ContactPage;

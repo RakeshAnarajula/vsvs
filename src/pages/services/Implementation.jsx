@@ -44,7 +44,7 @@ const SAPImplementation = () => {
     },
     {
       title: "3. Implementation",
-      img: "https://images.unsplash.com/photo-1587614203976-365c74645e83",
+      img: "/implemantation.jpeg",
       desc: "Migrate data, test modules, and roll out in phases.",
     },
     {
@@ -86,7 +86,7 @@ const SAPImplementation = () => {
     },
   ];
   return (
-    <div className="bg-gray-100 px-4 md:px-20 py-1 text-gray-800 overflow-x-hidden">
+    <div className="bg-gray-100 px-4 md:px-20 py-1 text-gray-800 overflow-hidden">
       <motion.div
         variants={fadeUp}
         initial="hidden"

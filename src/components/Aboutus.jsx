@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 export default function VisionMission() {
   return (
-    <div className="bg-white px-6 py-12 md:px-20 space-y-10">
+    <div className="bg-white px-6 py-10 md:px-20 space-y-10">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -48,7 +48,7 @@ export default function VisionMission() {
           <img
             src="/Business Intelligence & Analytics.avif"
             alt="Mission 1"
-            className="w-full h-48 md:h-64 lg:h-72 object-cover rounded-lg shadow-md row-span-2"
+            className="w-full h-52 md:h-66 lg:h-76 object-cover rounded-lg shadow-md row-span-2"
           />
           <img
             src="/Cloud-Based Solutions.jpg"
