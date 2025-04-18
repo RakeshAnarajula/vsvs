@@ -31,32 +31,32 @@ const caseStudies = [
 const industries = [
   {
     name: 'Manufacturing',
-    icon: <Factory size={36} className="text-blue-600 mb-4" />,
+    icon: <Factory size={36} className="text-blue-800 mb-4" />,
     short: 'Optimize production and supply chain efficiency.',
   },
   {
     name: 'Retail',
-    icon: <ShoppingCart size={36} className="text-blue-600 mb-4" />,
+    icon: <ShoppingCart size={36} className="text-blue-800 mb-4" />,
     short: 'Enhance inventory and customer experience.',
   },
   {
     name: 'Finance',
-    icon: <Banknote size={36} className="text-blue-600 mb-4" />,
+    icon: <Banknote size={36} className="text-blue-800 mb-4" />,
     short: 'Improve financial systems and compliance.',
   },
   {
     name: 'Healthcare',
-    icon: <Stethoscope size={36} className="text-blue-600 mb-4" />,
+    icon: <Stethoscope size={36} className="text-blue-800 mb-4" />,
     short: 'Manage resources and patient care efficiently.',
   },
   {
     name: 'Logistics',
-    icon: <Truck size={36} className="text-blue-600 mb-4" />,
+    icon: <Truck size={36} className="text-blue-800 mb-4" />,
     short: 'Optimize supply chains and delivery tracking.',
   },
   {
     name: 'Education',
-    icon: <GraduationCap size={36} className="text-blue-600 mb-4" />,
+    icon: <GraduationCap size={36} className="text-blue-800 mb-4" />,
     short: 'Manage students, faculty, and reporting systems.',
   },
 ];
@@ -101,14 +101,14 @@ const technologies = [
 
 const CaseStudies = () => {
   return (
-    <div className="min-h-screen bg-gray-50 px-6 py-12 text-gray-800 space-y-20">
+    <div className="min-h-screen bg-gray-50 px-6 py-6 text-gray-800 space-y-10">
       <motion.section
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="text-center max-w-3xl mx-auto"
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-blue-800">
+        <h1 className="text-4xl md:text-4xl font-bold text-blue-900">
           Case Studies
         </h1>
         <p className="mt-4 text-gray-600 text-lg">
@@ -150,7 +150,7 @@ const CaseStudies = () => {
         viewport={{ once: true }}
         className="max-w-6xl mx-auto text-center"
       >
-        <h2 className="text-3xl font-bold text-blue-700 mb-6">
+        <h2 className="text-3xl font-bold text-blue-900 mb-6">
           Industries We Serve
         </h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -181,7 +181,7 @@ const CaseStudies = () => {
         viewport={{ once: true }}
         className="max-w-6xl mx-auto text-center"
       >
-        <h2 className="text-3xl font-bold text-blue-700 mb-6">
+        <h2 className="text-3xl font-bold text-blue-900 mb-6">
           Technologies We Use
         </h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">

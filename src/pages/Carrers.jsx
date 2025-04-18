@@ -17,62 +17,85 @@ const values = [
     description: 'We believe in dreaming big and building the future.',
   },
 ];
-const perks = [
-  {
-    img: '/system upgrade.jpg',
-    title: 'Flexible Work Culture',
-    description: 'Hybrid and remote work options for better work-life balance.',
-  },
-  {
-    img: '/production and planning.avif',
-    title: 'Career Growth',
-    description: 'Learning paths, certifications, and real-time project experience.',
-  },
-  {
-    img: '/Improved Collaboration.avif',
-    title: 'Collaborative Teams',
-    description: 'Work with experienced SAP and ERP professionals globally.',
-  },
-  {
-    img: '/Data-Driven Decisions.avif',
-    title: 'Diversity & Inclusion',
-    description: 'We value different perspectives and celebrate individuality.',
-  },
-];
+
 const employeeBenefits = [
   {
-    img: '/Advanced Reporting.avif',
+    img: 'health and wellness.avif',
     title: 'Health & Wellness',
     description: 'Comprehensive health coverage, gym memberships, and mental health support.',
   },
   {
-    img: '/Business Intelligence & Analytics.avif',
+    img: '/Paid Time Off.avif',
     title: 'Paid Time Off',
     description: 'Generous paid vacation, sick days, and holidays for work-life balance.',
   },
   {
-    img: '/business intelligence.avif',
+    img: '/Retirement Plans.jpg',
     title: 'Retirement Plans',
     description: 'Employer-funded retirement plans and financial planning resources.',
   },
-];
-const learningResources = [
   {
-    img: '/Training & Change Management.avif',
-    title: 'Upskilling Programs',
-    description: 'Access to SAP learning hub and online certifications.',
+    img: '/Professional Development.avif',
+    title: 'Professional Development',
+    description: 'Budget for conferences, workshops, and continuing education opportunities.',
   },
   {
-    img: '/Unlock Insights with SAP Analytics.jpg',
-    title: 'Mentorship',
-    description: 'Guided learning through 1-on-1 sessions with industry experts.',
+    img: '/Remote Work Options.jpg',
+    title: 'Remote Work Options',
+    description: 'Flexible work arrangements including hybrid and fully remote positions.',
   },
   {
-    img: '/consulting services.jpg',
-    title: 'Hands-on Labs',
-    description: 'Practice real-time SAP modules in sandbox environments.',
+    img: '/Family Support.jpg',
+    title: 'Family Support',
+    description: 'Parental leave, childcare assistance, and family-friendly policies.',
   },
 ];
+
+const workCulture = [
+  {
+    title: 'Friendly Environment',
+    description: 'We believe in maintaining an environment that is filled with integrity and joy to manifest a better workplace.',
+    icon: (
+      <path d="M30 12c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 4c3.314 0 6 2.686 6 6s-2.686 6-6 6-6-2.686-6-6 2.686-6 6-6zm14 16H16c-5.523 0-10 4.477-10 10v10h48V42c0-5.523-4.477-10-10-10zm6 16H10v-6c0-3.314 2.686-6 6-6h28c3.314 0 6 2.686 6 6v6z" fill="#3182ce" fillRule="evenodd" />
+    ),
+  },
+  {
+    title: 'Team Support',
+    description: 'We have tremendous team support for fielding your queries and solving problems that come your way.',
+    icon: (
+      <path d="M44 18h-6v-2c0-1.1-.9-2-2-2h-12c-1.1 0-2 .9-2 2v2h-6c-3.3 0-6 2.7-6 6v14c0 3.3 2.7 6 6 6h28c3.3 0 6-2.7 6-6v-14c0-3.3-2.7-6-6-6zm-18-2h8v2h-8v-2zm20 22c0 1.1-.9 2-2 2h-28c-1.1 0-2-.9-2-2v-8h4v4c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-4h8v4c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-4h4v8z" fill="#3182ce" fillRule="evenodd" />
+    ),
+  },
+  {
+    title: 'Continuous Learning',
+    description: 'Learning is a timeless process, and we make sure that the individual who is part of our journey will get the opportunity to learn every day.',
+    icon: (
+      <path d="M45 12H15c-1.7 0-3 1.3-3 3v30c0 1.7 1.3 3 3 3h30c1.7 0 3-1.3 3-3V15c0-1.7-1.3-3-3-3zm-1 32H16V16h28v28zM26 22h8v2h-8v-2zm-4 0h2v2h-2v-2zm4 6h8v2h-8v-2zm-4 0h2v2h-2v-2zm0 6h12v2H22v-2zm18-12h-2v10h-10v2h12V22z" fill="#3182ce" fillRule="evenodd" />
+    ),
+  },
+  {
+    title: 'Career Growth',
+    description: 'As a growing organization, ours is the perfect place for taking your career to the next level.',
+    icon: (
+      <path d="M18 42h-8V30h8v12zm16 0h-8V18h8v24zm16 0h-8V26h8v16zm4-30H6c-1.1 0-2 .9-2 2v36c0 1.1.9 2 2 2h48c1.1 0 2-.9 2-2V14c0-1.1-.9-2-2-2zm-2 36H8V16h44v32z" fill="#3182ce" fillRule="evenodd" />
+    ),
+  },
+  {
+    title: 'Flexible Timing',
+    description: 'It provides performance liberty as well as become authorized to achieve the target by pre-scheduling the task.',
+    icon: (
+      <path d="M30 10c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20zm0 36c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zm-2-16.7V18h4v10.1l8.4 5-2 3.4-10.4-6.2z" fill="#3182ce" fillRule="evenodd" />
+    ),
+  },
+  {
+    title: 'Diversified Sources',
+    description: 'We, as a company, empower the employees with a heap of resources to accomplish goals.',
+    icon: (
+      <path d="M46 16H14c-2.2 0-4 1.8-4 4v20c0 2.2 1.8 4 4 4h32c2.2 0 4-1.8 4-4V20c0-2.2-1.8-4-4-4zm0 24H14V20h32v20zm-4-16H32v-4h10v4zm0 8H26v-4h16v4zm0 8H18v-4h24v4zm-28-8h4v4h-4v-4zm0-8h4v4h-4v-4z" fill="#3182ce" fillRule="evenodd" />
+    ),
+  },
+];
+
 const Careers = () => {
   return (
     <div className="min-h-screen bg-gray-50 px-4 py-10 space-y-10 text-gray-800">
@@ -82,9 +105,9 @@ const Careers = () => {
         transition={{ duration: 0.8 }}
         className="text-center max-w-4xl mx-auto"
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-blue-800">Careers at Our ERP Firm</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-blue-800">Careers at Our ERP Firm</h1>
         <p className="mt-4 text-gray-600 text-lg">
-          Join a team that’s shaping enterprise solutions with SAP and ERP excellence.
+          Join a team that's shaping enterprise solutions with SAP and ERP excellence.
         </p>
       </motion.section>
       <motion.section
@@ -113,20 +136,32 @@ const Careers = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
-        className="max-w-7xl mx-auto text-center"
+        className="max-w-7xl mx-auto"
       >
-        <h2 className="text-3xl font-bold text-blue-700 mb-10">Why Work With Us</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {perks.map((perk, i) => (
-            <div key={i} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-              <img
-                src={perk.img}
-                alt={perk.title}
-                className="rounded-lg mb-4 w-full h-48 object-cover"
-              />
-              <h3 className="text-xl font-semibold text-blue-800">{perk.title}</h3>
-              <p className="text-gray-600 mt-2">{perk.description}</p>
-            </div>
+        <h2 className="text-3xl font-bold text-blue-800 mb-1 text-center">Work Culture</h2>
+        <div className="border-t-3 border-blue-800 w-30 mx-auto mb-6"></div> 
+        <p className="text-center text-gray-600 max-w-4xl mx-auto mb-10">
+          We are always looking to add talented and motivated individuals to our dedicated workforce. If you
+          are a team player, passionate about what you do, and are thrilled at the prospect of solving problems,
+          Horizoncore is the place for you!
+        </p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {workCulture.map((item, i) => (
+            <motion.div 
+              key={i}
+              className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition"
+              whileHover={{ y: -5 }}
+            >
+              <div className="rounded-full bg-blue-50 w-24 h-24 flex items-center justify-center mx-auto mb-4">
+                <svg width="60" height="60" viewBox="0 0 60 60" className="text-blue-900">
+                  {item.icon}
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-blue-800 text-center">{item.title}</h3>
+              <p className="text-gray-600 mt-2 text-center">
+                {item.description}
+              </p>
+            </motion.div>
           ))}
         </div>
       </motion.section>
@@ -137,31 +172,8 @@ const Careers = () => {
         viewport={{ once: true }}
         className="max-w-6xl mx-auto text-center"
       >
-        <h2 className="text-3xl font-bold text-blue-700 mb-10">Our Work Environment</h2>
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          <img
-            src="/consulting services.jpg"
-            alt="Office Space"
-            className="rounded-xl shadow-lg w-full object-cover"
-          />
-          <div className="text-left space-y-4">
-            <p className="text-lg text-gray-700">
-              We foster a creative, inclusive, and collaborative environment where your ideas are valued. Our team works together to create innovative SAP and ERP solutions for clients worldwide.
-            </p>
-            <p className="text-lg text-gray-700">
-              Join us to be part of an inspiring team that is shaping the future of enterprise solutions.
-            </p>
-          </div>
-        </div>
-      </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="max-w-6xl mx-auto text-center"
-      >
-        <h2 className="text-3xl font-bold text-blue-700 mb-10">Employee Benefits</h2>
+        <h2 className="text-3xl font-bold text-blue-800 mb-2">Employee Benefits</h2>
+        <div className="border-t-3 border-blue-800 w-30 mx-auto mb-6"></div>  
         <div className="grid md:grid-cols-3 gap-8">
           {employeeBenefits.map((benefit, i) => (
             <div key={i} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
@@ -176,28 +188,6 @@ const Careers = () => {
           ))}
         </div>
       </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="max-w-6xl mx-auto text-center"
-      >
-        <h2 className="text-3xl font-bold text-blue-700 mb-10">Learning & Development</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {learningResources.map((item, i) => (
-            <div key={i} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition">
-              <img
-                src={item.img}
-                alt={item.title}
-                className="rounded-lg mb-4 w-full h-48 object-cover"
-              />
-              <h3 className="text-xl font-semibold text-blue-800">{item.title}</h3>
-              <p className="text-gray-600 mt-2">{item.description}</p>
-            </div>
-          ))}
-        </div>
-      </motion.section>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -205,7 +195,7 @@ const Careers = () => {
       >
         <h2 className="text-2xl md:text-3xl font-bold mb-2">Ready to Start Your Journey?</h2>
         <p className="text-xl text-gray-600 mb-6">
-          Let’s collaborate to drive business transformation through tailored SAP solutions.
+          Let's collaborate to drive business transformation through tailored SAP solutions.
         </p>
         <motion.button
           whileHover={{ scale: 1.05 }}
@@ -218,5 +208,4 @@ const Careers = () => {
     </div>
   );
 };
-
 export default Careers;

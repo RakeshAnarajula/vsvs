@@ -5,35 +5,35 @@ const testimonials = [
     role: "Project Manager, SAP Corp",
     feedback:
       "The implementation process was seamless and exceeded our expectations. The team demonstrated a deep understanding of ERP systems. Their attention to detail and commitment to meeting deadlines made this one of the smoothest.",
-    image: "/business intelligence.avif"
+    image: "/anjali.jpg"
   },
   {
     name: "Rahul Mehta",
     role: "CTO, FinSys Pvt Ltd",
     feedback:
       "Their expertise in SAP solutions helped us optimize operations and cut costs significantly. Truly professional team! The customized dashboard they created gives us real-time visibility into key metrics that has transformed.",
-    image: "/Automated Workflows.avif"
+    image: "/rahul mehta.jpg"
   },
   {
     name: "Priya Desai",
     role: "ERP Analyst, MaxonTech",
     feedback:
       "Outstanding support throughout the deployment process. I highly recommend their services. Their team was available 24/7 during critical implementation phases, and their training program ensured all our staff were comfortable .",
-    image: "/Business Intelligence & Analytics.avif"
+    image: "/Priya Desai.jpg"
   },
   {
     name: "Arjun Verma",
     role: "IT Director, TechNova",
     feedback:
       "Exceptional service and attention to detail. Our ERP migration was smooth and successful. What impressed me most was how they handled data migration with zero downtime and complete accuracy, a feat our previous vendor said was impossible.",
-    image: "/business intelligence.avif"
+    image: "/arjun varma.jpg"
   },
   {
     name: "Sneha Kapoor",
     role: "Operations Head, LogicBase",
     feedback:
       "Reliable, efficient, and highly skilled professionals. Working with them was a great experience. Their team took the time to understand our unique business processes and delivered a solution that feels tailor-made rather than forced into a standard template.",
-    image: "/Advanced Reporting.avif"
+    image: "/sneha kapoor.jpg"
   },
 ];
 const Testimonials = () => {

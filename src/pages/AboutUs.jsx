@@ -10,7 +10,7 @@ const fadeIn = {
 };
 const CompanyProfile = () => {
   return (
-    <div className="bg-white px-6 py-12 md:px-20 space-y-10">
+    <div className="bg-white px-6 py-6 md:px-20 space-y-10">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ const CompanyProfile = () => {
       >
         <div className="w-full md:w-1/2">
           <img
-            src="/consulting services.jpg"
+            src="/our vision.avif"
             alt="Our Vision"
             className="w-full rounded-lg shadow-md"
           />
@@ -55,7 +55,7 @@ const CompanyProfile = () => {
       >
         <div className="w-full md:w-1/2 grid grid-cols-2 grid-rows-2 gap-4">
           <img
-            src="/Business Intelligence & Analytics.avif"
+            src="/our mission3.avif"
             alt="Mission 1"
             className="w-full h-48 md:h-64 lg:h-72 object-cover rounded-lg shadow-md row-span-2"
           />
@@ -92,9 +92,9 @@ const CompanyProfile = () => {
         variants={fadeIn}
       >
         <div className="flex justify-center mb-4">
-          <h2 className="text-2xl font-semibold text-blue-800">Our Accomplishments & Assets</h2>
+          <h2 className="text-3xl font-semibold text-blue-800">Our Accomplishments & Assets</h2>
         </div>
-        <div className="border-t-2 border-blue-500 w-12 mx-auto mb-12"></div>
+        <div className="border-t-3 border-blue-800 w-40 mx-auto mb-12"></div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
           <motion.div 
             className="flex flex-col items-center text-center"
@@ -184,9 +184,9 @@ const CompanyProfile = () => {
         variants={fadeIn}
       >
         <div className="flex justify-center mb-4">
-          <h2 className="text-2xl font-semibold text-blue-800">Our Core Values</h2>
+          <h2 className="text-3xl font-semibold text-blue-800">Our Core Values</h2>
         </div>
-        <div className="border-t-2 border-blue-800 w-12 mx-auto mb-12"></div>  
+        <div className="border-t-3 border-blue-800 w-20 mx-auto mb-12"></div>  
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <motion.div 
             className="flex flex-col items-center text-center border-r border-gray-200 p-6"
