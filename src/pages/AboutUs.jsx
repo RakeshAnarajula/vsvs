@@ -92,7 +92,9 @@ const CompanyProfile = () => {
         variants={fadeIn}
       >
         <div className="flex justify-center mb-4">
-          <h2 className="text-3xl font-semibold text-blue-800">Our Accomplishments & Assets</h2>
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold text-blue-800">
+          Our Accomplishments & Assets
+         </h2>
         </div>
         <div className="border-t-3 border-blue-800 w-40 mx-auto mb-12"></div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
