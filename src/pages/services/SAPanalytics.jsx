@@ -8,7 +8,6 @@ const fadeUp = {
 const SAPAnalytics = () => {
   return (
     <div className="bg-gray-100 py-2 px-4 md:px-20 space-y-10 text-gray-800">
-      {/* Intro Section */}
       <motion.div
         variants={fadeUp}
         initial="hidden"

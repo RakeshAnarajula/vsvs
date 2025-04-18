@@ -72,12 +72,11 @@ const Footer = () => {
           >
             <FooterSection title="QUICK LINKS" icon={HomeIcon}>
               <FooterLink to="/">Home</FooterLink>
-              <FooterLink to="/aboutus/ourstory">Our Story</FooterLink>
-              <FooterLink to="/aboutus/leadership">Leadership</FooterLink>
+              <FooterLink to="/AboutUs">About us</FooterLink>
               <FooterLink to="/carrers">Careers</FooterLink>
               <FooterLink to="/contactus">Contact Us</FooterLink>
             </FooterSection>
-            <FooterSection title="ABOUT US" icon={Info}>
+            <FooterSection title="CAREERS" icon={Info}>
               <FooterLink to="/resources/blog">Blog</FooterLink>
               <FooterLink to="/resources/Casestudies">Casestudies</FooterLink>
               <FooterLink to="/PrivacyPolicy">Privacy Policy</FooterLink>

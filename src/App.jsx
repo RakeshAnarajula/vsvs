@@ -9,8 +9,6 @@ import Aboutus from "./components/Aboutus";
 import OurServices from "./components/OurServices";
 import Testinomials from "./components/Testinomials";
 
-import Ourstory from './pages/aboutus/Ourstory';
-import Leadership from './pages/aboutus/Leadership';
 import BusinessOne from './pages/services/Businessone';
 import Consulting from './pages/services/Consulting';
 import ERPsolutions from './pages/services/ERPsolutions';
@@ -22,6 +20,7 @@ import Carrers from './pages/Carrers';
 import Contactus from './pages/Contactus';
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsofServices from "./pages/Termsofservices";
+import AboutUs from "./pages/AboutUs";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -55,8 +54,7 @@ const App = () => {
                 </>
               }
             />
-            <Route path="/aboutus/ourstory" element={<Ourstory />} />
-            <Route path="/aboutus/leadership" element={<Leadership />} />
+            <Route path="/AboutUs" element={<AboutUs />} />  
             <Route path="/services/BusinessOne" element={<BusinessOne />} />
             <Route path="/services/Consulting" element={<Consulting />} />
             <Route path="/services/ERPsolutions" element={<ERPsolutions />} />

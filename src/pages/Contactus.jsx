@@ -43,8 +43,8 @@ const ContactPage = () => {
     setIsSubmitted(true);
   };
   return (
-    <div className="min-h-screen  py-12 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto max-w-6xl">
+    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto max-w-5xl">
         <div className="grid md:grid-cols-2 gap-8 bg-gradient-to-br from-blue-900 to-blue-900 shadow-xl rounded-2xl overflow-hidden border border-blue-700 min-h-[500px]">
           <div className="bg-gradient-to-br from-blue-900 to-blue-900 p-10 text-white flex flex-col justify-between relative">
             <div>
@@ -67,6 +67,7 @@ const ContactPage = () => {
             <div className="absolute -top-16 -right-16 w-48 h-48 bg-white/10 rounded-full"></div>
             <div className="absolute -bottom-16 -left-16 w-48 h-48 bg-white/10 rounded-full"></div>
           </div>
+
           <div className="p-10 bg-gradient-to-br from-blue-900 to-blue-900 text-white">
             {!isSubmitted ? (
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -74,65 +75,89 @@ const ContactPage = () => {
                 <p className="text-gray-400 mb-6">
                   Have a question? We'd love to hear from you.
                 </p>
-                <div className="relative flex items-center space-x-3">
-                  <User className="w-5 h-5 text-gray-400" />
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Your Name"
-                    className={`w-full py-2 bg-transparent text-white border-b-2 ${
-                      errors.name ? 'border-red-500' : 'border-blue-600'
-                    } focus:border-cyan-400 transition outline-none`}
-                  />
+                <div>
+                  <div className="flex items-center space-x-3">
+                    <User className="w-5 h-5 text-gray-400" />
+                    <input
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder="Your Name"
+                      className={`w-full py-2 bg-transparent text-white border-b-2 ${
+                        errors.name ? 'border-red-500' : 'border-blue-600'
+                      } focus:border-cyan-400 transition outline-none`}
+                    />
+                  </div>
+                  {errors.name && (
+                    <div className="pl-8">
+                      <p className="text-red-500 text-sm">{errors.name}</p>
+                    </div>
+                  )}
                 </div>
-                {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
-                <div className="relative flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-gray-400" />
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="Your Email"
-                    className={`w-full py-2 bg-transparent text-white border-b-2 ${
-                      errors.email ? 'border-red-500' : 'border-blue-600'
-                    } focus:border-cyan-400 transition outline-none`}
-                  />
+                <div>
+                  <div className="flex items-center space-x-3">
+                    <Mail className="w-5 h-5 text-gray-400" />
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="Your Email"
+                      className={`w-full py-2 bg-transparent text-white border-b-2 ${
+                        errors.email ? 'border-red-500' : 'border-blue-600'
+                      } focus:border-cyan-400 transition outline-none`}
+                    />
+                  </div>
+                  {errors.email && (
+                    <div className="pl-8">
+                      <p className="text-red-500 text-sm">{errors.email}</p>
+                    </div>
+                  )}
                 </div>
-                {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
-                <div className="relative flex items-center space-x-3">
-                  <Phone className="w-5 h-5 text-gray-400" />
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="Your Phone Number"
-                    className={`w-full py-2 bg-transparent text-white border-b-2 ${
-                      errors.phone ? 'border-red-500' : 'border-blue-600'
-                    } focus:border-cyan-400 transition outline-none`}
-                  />
+                <div>
+                  <div className="flex items-center space-x-3">
+                    <Phone className="w-5 h-5 text-gray-400" />
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="Your Phone Number"
+                      className={`w-full py-2 bg-transparent text-white border-b-2 ${
+                        errors.phone ? 'border-red-500' : 'border-blue-600'
+                      } focus:border-cyan-400 transition outline-none`}
+                    />
+                  </div>
+                  {errors.phone && (
+                    <div className="pl-8">
+                      <p className="text-red-500 text-sm">{errors.phone}</p>
+                    </div>
+                  )}
                 </div>
-                {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
-                <div className="relative flex items-start space-x-3">
-                  <MessageCircle className="w-5 h-5 text-gray-400 mt-2" />
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Your Message"
-                    rows={4}
-                    className={`w-full py-2 bg-transparent text-white border-b-2 ${
-                      errors.message ? 'border-red-500' : 'border-blue-600'
-                    } focus:border-cyan-400 transition outline-none resize-none`}
-                  ></textarea>
+                <div>
+                  <div className="flex items-start space-x-3">
+                    <MessageCircle className="w-5 h-5 text-gray-400 mt-2" />
+                    <textarea
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      placeholder="Your Message"
+                      rows={4}
+                      className={`w-full py-2 bg-transparent text-white border-b-2 ${
+                        errors.message ? 'border-red-500' : 'border-blue-600'
+                      } focus:border-cyan-400 transition outline-none resize-none`}
+                    ></textarea>
+                  </div>
+                  {errors.message && (
+                    <div className="pl-8">
+                      <p className="text-red-500 text-sm">{errors.message}</p>
+                    </div>
+                  )}
                 </div>
-                {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
                 <button
                   type="submit"
-                  className="w-full bg-blue-700 text-white py-3 rounded-full hover:from-cyan-600 hover:to-blue-600 transition flex items-center justify-center space-x-2 group"
+                  className="w-full bg-blue-700 text-white py-3 rounded-full hover:from-blue-600 hover:to-blue-600 transition flex items-center justify-center space-x-2 group"
                 >
                   <span>Send Message</span>
                   <Send className="w-5 h-5 group-hover:translate-x-1 transition" />
@@ -140,7 +165,7 @@ const ContactPage = () => {
               </form>
             ) : (
               <div className="text-center space-y-6">
-                <h2 className="text-2xl font-bold text-green-400">Message Sent Successfully!</h2>
+                <h2 className="text-2xl font-bold text-blue-100">Message Sent Successfully!</h2>
                 <p className="text-gray-300">
                   Thank you for reaching out. We'll get back to you shortly.
                 </p>
@@ -155,7 +180,7 @@ const ContactPage = () => {
                     });
                     setErrors({});
                   }}
-                  className="px-6 py-3 bg-blue-800 text-white rounded-full hover:bg-cyan-800 transition"
+                  className="px-6 py-3 bg-blue-700 text-white rounded-full hover:bg-blue-800 transition"
                 >
                   Send Another Message
                 </button>

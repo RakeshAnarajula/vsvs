@@ -177,11 +177,6 @@ const Navbar = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const aboutItems = [
-    { label: "Our Story", path: "/aboutus/ourstory" },
-    { label: "Leadership", path: "/aboutus/leadership" },
-  ];
-
   const servicesItems = [
     { label: "Implementation", path: "/services/Implementation" },
     { label: "Business One", path: "/services/Businessone" },
@@ -195,7 +190,6 @@ const Navbar = () => {
     { label: "Case Studies", path: "/resources/Casestudies" },
   ];
 
-  const isAboutActive = location.pathname.includes("/aboutus");
   const isServicesActive = location.pathname.includes("/services");
   const isResourcesActive = location.pathname.includes("/resources");
 
@@ -215,7 +209,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`bg-white text-blue-800 fixed top-0 left-0 right-0 z-50 ${
+      <nav className={`bg-white text-blue-800 text-md font-semibold fixed top-0 left-0 right-0 z-50 ${
         scrolled ? "shadow-lg" : "shadow-md"
       }`}>
         <div className={`max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 ${getNavPadding()} flex justify-between items-center`}>
@@ -228,7 +222,7 @@ const Navbar = () => {
           </Link>
           <div className="hidden lg:flex gap-4 xl:gap-6 items-center">
             <NavLink to="/">Home</NavLink>
-            <Dropdown title="About Us" items={aboutItems} isActive={isAboutActive} />
+            <NavLink to="/aboutus">About Us</NavLink>
             <Dropdown title="Services" items={servicesItems} isActive={isServicesActive} />
             <Dropdown title="Resources" items={resourcesItems} isActive={isResourcesActive} />
             <NavLink to="/carrers">Careers</NavLink>
@@ -236,7 +230,7 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex lg:hidden gap-2 items-center">
             <NavLink to="/">Home</NavLink>
-            <Dropdown title="About Us" items={aboutItems} isActive={isAboutActive} />
+            <NavLink to="/aboutus">About Us</NavLink>
             <Dropdown title="Services" items={servicesItems} isActive={isServicesActive} />
             <Dropdown title="Resources" items={resourcesItems} isActive={isResourcesActive} />
             <NavLink to="/carrers">Careers</NavLink>
@@ -293,13 +287,9 @@ const Navbar = () => {
                 <NavLink to="/" isMobile={true} onClick={closeMobileMenu}>
                   Home
                 </NavLink>
-                <Dropdown 
-                  title="About Us" 
-                  items={aboutItems} 
-                  isActive={isAboutActive} 
-                  isMobile={true} 
-                  closeMenu={closeMobileMenu} 
-                />
+                <NavLink to="/aboutus" isMobile={true} onClick={closeMobileMenu}>
+                  About Us
+                </NavLink>
                 <Dropdown 
                   title="Services" 
                   items={servicesItems} 
@@ -352,4 +342,5 @@ const Navbar = () => {
     </>
   );
 };
+
 export default Navbar;
