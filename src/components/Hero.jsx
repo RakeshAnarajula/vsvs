@@ -73,9 +73,9 @@ export default function Hero() {
     const totalLanes = getLaneCount();
 
     const getImageSize = () => {
-      if (windowSize.width < 640) return { width: 190, height: 190 };
+      if (windowSize.width < 640) return { width: 290, height: 190 };
       if (windowSize.width < 1024) return { width: 230, height: 200 };
-      return { width: 350, height: 220 }; 
+      return { width: 450, height: 220 }; 
     };
     const imageSize = getImageSize();
     const gap = 20; 
