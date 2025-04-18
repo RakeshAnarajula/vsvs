@@ -111,14 +111,14 @@ const Resources = () => {
             Featured: Why ERP is Critical for Digital Transformation
           </motion.h2>
           <motion.p
-            className="text-gray-600 text-sm leading-relaxed"
+            className="text-gray-600 text-md leading-relaxed"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
             ERP systems are the backbone of digital business, offering centralized control, seamless integration, and real-time visibility across all departments. In 2025, these systems are not just supporting business operations—they are transforming them.
-            <br /><br />
+            <br />
             With advancements in AI, machine learning, and data analytics, modern ERP platforms are enabling smarter decision-making, predictive insights, and greater operational efficiency. From automating routine tasks to enhancing supply chain resilience and customer experience, ERP systems are becoming the nerve center of agile and innovative enterprises.
           </motion.p>
         </div>
