@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-const TermsOfService = () => {
+const TermsOfServices = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -185,4 +185,4 @@ const TermsOfService = () => {
     </div>
   );
 };
-export default TermsOfService;
+export default TermsOfServices;

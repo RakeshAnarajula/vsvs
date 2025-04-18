@@ -5,7 +5,7 @@ const fadeUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
 };
 
-const SAPExperienceSection = () => {
+const Card = () => {
   return (
     <div className="bg-blue-50  py-6 lg:py-12 px-4 sm:px-4 lg:px-20">
       <div className="bg-blue-900 max-w-8xl mx-auto px-4 py-10 rounded-2xl shadow-2xl flex flex-col md:flex-row items-center gap-10">
@@ -43,4 +43,4 @@ const SAPExperienceSection = () => {
     </div>
   );
 };
-export default SAPExperienceSection;
+export default Card;

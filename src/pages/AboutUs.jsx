@@ -8,7 +8,7 @@ const fadeIn = {
     transition: { duration: 0.6 }
   }
 };
-const CompanyProfile = () => {
+const AboutUs = () => {
   return (
     <div className="bg-white px-6 py-6 md:px-20 space-y-10">
       <motion.div
@@ -109,7 +109,7 @@ const CompanyProfile = () => {
               </svg>
             </div>
             <h3 className="font-semibold text-lg mb-2">Location</h3>
-            <p className="text-gray-600 text-sm">Strategically situated in the heart of USA.</p>
+            <p className="text-gray-600 text-sm">Plot No.57, Ganesh Towers, Kakatiyanagar, Ashok Nagar, R C Puram, Telangana - 502032...</p>
           </motion.div>
           <motion.div 
             className="flex flex-col items-center text-center"
@@ -286,4 +286,4 @@ const CompanyProfile = () => {
     </div>
   );
 };
-export default CompanyProfile;
+export default AboutUs;

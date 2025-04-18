@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {Mail,Phone,MapPin,Send,User,MessageCircle,} from 'lucide-react';
-const ContactPage = () => {
+const Contactus = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -197,4 +197,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default Contactus;

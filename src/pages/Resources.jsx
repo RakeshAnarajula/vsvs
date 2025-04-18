@@ -66,15 +66,15 @@ const extraContent = [
     icon: <ServerCog className="w-10 h-10 text-blue-800" />,
   },
 ];
-const Blog = () => {
+const Resources = () => {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 px-4 py-10 space-y-20">
-      <section className="text-center max-w-3xl mx-auto mb-10">
+    <div className="min-h-screen  sm:px-4 lg:px-20 bg-gray-50 text-gray-800 px-4 py-10 space-y-10 ">
+      <section className="text-center max-w-3xl mx-auto mb-4">
         <motion.h1
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-4xl font-bold text-blue-900"
+          className="text-3xl md:text-3xl lg:text-4xl font-bold text-blue-900"
         >
           SAP & ERP Insights
         </motion.h1>
@@ -88,7 +88,7 @@ const Blog = () => {
         </motion.p>
       </section>
       <motion.section
-        className="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 mb-10 items-center bg-white p-6 rounded-2xl shadow-lg"
+        className="max-w-[1800px] mx-auto flex flex-col md:flex-row items-center gap-6 bg-white shadow-lg rounded-2xl p-6"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -97,11 +97,10 @@ const Blog = () => {
         <motion.img
           src="/Customizable Modules.jpg"
           alt="Featured"
-          className="w-full md:w-1/2 rounded-xl object-cover"
-          whileHover={{ scale: 1.02 }}
+          className="w-full md:w-[35%]  rounded-xl object-cover"
           transition={{ duration: 0.3 }}
         />
-        <div className="md:w-1/2">
+        <div className="md:w-[65%]">
           <motion.h2
             className="text-2xl font-bold text-blue-800 mb-4"
             initial={{ opacity: 0, x: -30 }}
@@ -112,17 +111,19 @@ const Blog = () => {
             Featured: Why ERP is Critical for Digital Transformation
           </motion.h2>
           <motion.p
-            className="text-gray-600"
+            className="text-gray-600 text-sm leading-relaxed"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            ERP systems are the backbone of digital business, offering centralized control and real-time visibility. Explore how they are reshaping businesses in 2025.
+            ERP systems are the backbone of digital business, offering centralized control, seamless integration, and real-time visibility across all departments. In 2025, these systems are not just supporting business operations—they are transforming them.
+            <br /><br />
+            With advancements in AI, machine learning, and data analytics, modern ERP platforms are enabling smarter decision-making, predictive insights, and greater operational efficiency. From automating routine tasks to enhancing supply chain resilience and customer experience, ERP systems are becoming the nerve center of agile and innovative enterprises.
           </motion.p>
         </div>
       </motion.section>
-      <section className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <section className="grid md:grid-cols-3 gap-8 max-w-[1800px] mx-auto px-4">
         {blogPosts.map((post, index) => (
           <motion.div
             key={post.id}
@@ -136,7 +137,6 @@ const Blog = () => {
               src={post.image}
               alt={post.title}
               className="w-full h-48 object-cover"
-              whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             />
             <div className="p-6">
@@ -147,7 +147,7 @@ const Blog = () => {
           </motion.div>
         ))}
       </section>
-      <section className="max-w-6xl mx-auto text-center">
+      <section className="max-w-[1800px] px-4 mx-auto text-center">
         <h2 className="text-3xl font-bold text-blue-800 mb-10">Explore More About ERP & SAP</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {extraContent.map((item, index) => (
@@ -166,7 +166,7 @@ const Blog = () => {
           ))}
         </div>
       </section>
-      <section className="max-w-7xl mx-auto">
+      <section className="max-w-[1800px] mx-auto">
         <h2 className="text-3xl font-bold text-blue-800 text-center mb-10">
           SAP Resource Spotlight
         </h2>
@@ -229,4 +229,4 @@ const Blog = () => {
     </div>
   );
 };
-export default Blog;
+export default Resources;

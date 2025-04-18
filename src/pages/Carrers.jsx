@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
 const values = [
   {
     img: '/Unlock Insights with SAP Analytics.jpg',
@@ -63,37 +62,37 @@ const workCulture = [
     ),
   },
 ];
-
-const Careers = () => {
+const Carrers = () => {
   return (
-    <div className="min-h-screen bg-gray-50 px-4 py-10 space-y-10 text-gray-800">
+    <div className="min-h-screen bg-gray-50 px-4 sm:px-6 lg:px-16 py-10 space-y-10 text-gray-800">
       <motion.section
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         className="text-center max-w-4xl mx-auto"
       >
-        <h1 className="text-3xl md:text-4xl font-bold text-blue-800">Careers at Our ERP Firm</h1>
-        <p className="mt-4 text-gray-600 text-lg">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-800">Careers at Our ERP Firm</h1>
+        <p className="mt-4 text-gray-600 text-md sm:text-lg">
           Join a team that's shaping enterprise solutions with SAP and ERP excellence.
         </p>
       </motion.section>
-
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
-        className="max-w-5xl mx-auto text-center"
+        className="max-w-[1800px] mx-auto px-4"
       >
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {values.map((value, i) => (
             <div key={i} className="bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition">
-              <img
-                src={value.img}
-                alt={value.title}
-                className="rounded-lg mb-4 w-full h-48 object-cover"
-              />
+              <div className="aspect-[16/9] overflow-hidden rounded-lg mb-4">
+                <img
+                  src={value.img}
+                  alt={value.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <h3 className="text-xl font-semibold text-blue-800">{value.title}</h3>
               <p className="text-gray-600 mt-2">{value.description}</p>
             </div>
@@ -105,63 +104,77 @@ const Careers = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
-        className="max-w-7xl mx-auto"
+        className="max-w-[1800px] px-4 mx-auto"
       >
         <h2 className="text-3xl font-bold text-blue-800 mb-1 text-center">Work Culture</h2>
-        <div className="border-t-3 border-blue-800 w-30 mx-auto mb-6"></div>
-        <p className="text-center text-gray-600 max-w-4xl mx-auto mb-10">
-          We are always looking to add talented and motivated individuals to our dedicated workforce. If you
-          are a team player, passionate about what you do, and are thrilled at the prospect of solving problems,
+        <div className="border-t-4 border-blue-800 w-24 mx-auto mb-6"></div>
+        <p className="text-center text-gray-600 max-w-4xl mx-auto mb-10 text-md sm:text-lg">
+          We are always looking to add talented and motivated individuals. If you are passionate and love solving problems,
           Horizoncore is the place for you!
         </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {workCulture.map((item, i) => (
             <motion.div
               key={i}
               className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition"
               whileHover={{ y: -5 }}
             >
-              <div className="rounded-full bg-blue-50 w-24 h-24 flex items-center justify-center mx-auto mb-4">
+              <div className="rounded-full bg-blue-50 w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mx-auto mb-4">
                 <svg width="60" height="60" viewBox="0 0 60 60" className="text-blue-900">
                   {item.icon}
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-blue-800 text-center">{item.title}</h3>
-              <p className="text-gray-600 mt-2 text-center">{item.description}</p>
+              <h3 className="text-lg sm:text-xl font-semibold text-blue-800 text-center">{item.title}</h3>
+              <p className="text-gray-600 mt-2 text-center text-sm sm:text-base">{item.description}</p>
             </motion.div>
           ))}
         </div>
       </motion.section>
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
+      <motion.h2
+       className="text-3xl font-bold text-blue-800 mb-4 text-center"
+       initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        >
+         Empowering SAP Careers
+        </motion.h2>
+        <motion.section
+        className="max-w-[1800px] mx-auto flex flex-col md:flex-row items-center gap-6 bg-white shadow-lg rounded-2xl p-6"
+        initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        className="max-w-6xl mx-auto"
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
       >
-        <h2 className="text-3xl font-bold text-blue-800 text-center mb-6">Empowering SAP Careers</h2>
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <img src="/Business Intelligence & Analytics.avif" alt="SAP Analytics Team" className="rounded-lg shadow-md" />
-          <div>
-            <p className="text-gray-700 text-lg mb-4">
-              At vsvs tech waves, we specialize in SAP-powered transformation. Whether you're a FICO wizard, ABAP developer,
-              or a BW/4HANA data scientist, we provide an ecosystem that supports learning, innovation, and high-impact delivery.
-            </p>
-            <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Work on S/4HANA cloud and on-premise deployments</li>
-              <li>Get access to internal SAP sandbox and demo systems</li>
-              <li>Engage in global SAP rollouts and support projects</li>
-              <li>Collaborate with experts across modules and industries</li>
-            </ul>
-          </div>
+        <motion.img
+          src="/Business Intelligence & Analytics.avif"
+          alt="Featured"
+          className="w-full md:w-[35%] rounded-xl object-cover"
+          transition={{ duration: 0.3 }}
+        />
+        <div className="md:w-[65%]">
+          <p className="text-gray-700 text-md sm:text-md mb-4">
+            At vsvs tech waves, we specialize in SAP-powered transformation. Whether you're a FICO wizard, ABAP developer,
+            or a BW/4HANA data scientist, we provide an ecosystem that supports learning, innovation, and high-impact delivery.
+          </p>
+          <ul className="list-disc pl-5 text-gray-700 space-y-2 text-sm sm:text-base">
+             <li>Work on S/4HANA cloud and on-premise deployments</li>
+             <li>Access to internal SAP sandbox and demo systems</li>
+             <li>Engage in global SAP rollouts and support projects</li>
+             <li>Collaborate with experts across modules and industries</li>
+             <li>Contribute to innovative SAP Fiori and UI5 application development</li>
+             <li>Participate in real-time issue resolution and system performance optimization</li>
+           </ul>
         </div>
-        <p className="text-center mt-10 text-lg text-gray-700">
+      </motion.section>
+            <p className="text-center mt-10 text-lg text-gray-700">
           <strong>To apply, please send your resume/CV to</strong>{' '}
           <a href="mailto:HR@vsvstechwaves.com" className="text-blue-700 underline">
             HR@vsvstechwaves.com
           </a>
         </p>
-      </motion.section>
     </div>
   );
 };
 
-export default Careers;
+export default Carrers;
