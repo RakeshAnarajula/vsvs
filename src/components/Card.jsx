@@ -7,8 +7,8 @@ const fadeUp = {
 
 const SAPExperienceSection = () => {
   return (
-    <div className="bg-blue-50  py-6 lg:py-12 px-4 lg:px-16">
-      <div className="bg-blue-900 max-w-screen-2xl mx-auto px-4 py-10 rounded-2xl shadow-2xl flex flex-col md:flex-row items-center gap-10">
+    <div className="bg-blue-50  py-6 lg:py-12 px-4 sm:px-4 lg:px-20">
+      <div className="bg-blue-900 max-w-screen-5xl mx-auto px-4 py-10 rounded-2xl shadow-2xl flex flex-col md:flex-row items-center gap-10">
           <motion.div
           className="w-full md:w-1/2"
           initial={{ opacity: 0, scale: 0.95 }}
