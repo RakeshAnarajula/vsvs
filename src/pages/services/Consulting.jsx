@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { FaUserTie, FaCogs, FaChartLine, FaRegLightbulb } from "react-icons/fa";
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -125,7 +126,7 @@ const SAPConsulting = () => {
   initial="hidden"
   whileInView="visible"
   viewport={{ once: true }}
-  className="grid md:grid-cols-2 items-center gap-12"
+  className="grid md:grid-cols-2 items-center gap-6 "
 >
   <div className="block md:hidden">
     <h2 className="text-3xl font-bold text-blue-900 mb-4 text-center">Why Partner With Us?</h2>
@@ -140,11 +141,14 @@ const SAPConsulting = () => {
       Why Partner With Us?
     </h2>
     <ul className="list-disc pl-6 space-y-2 text-gray-700">
-      <li>Customized SAP roadmaps for your business</li>
-      <li>Certified SAP consultants with years of domain expertise</li>
-      <li>Agile methodology for faster ROI</li>
-      <li>Seamless data migration & change management</li>
-    </ul>
+  <li>Customized SAP roadmaps for your business</li>
+  <li>Certified SAP consultants with years of domain expertise</li>
+  <li>Agile methodology for faster ROI</li>
+  <li>Seamless data migration & change management</li>
+  <li>End-to-end support from strategy to execution</li>
+  <li>Proven track record across multiple industries</li>
+</ul>
+
   </div>
 </motion.div>
       <motion.div
@@ -156,9 +160,11 @@ const SAPConsulting = () => {
       >
         <h3 className="text-2xl font-semibold mb-4">Looking to Elevate Your SAP Experience?</h3>
         <p className="mb-4 text-lg">Let’s collaborate to drive business transformation through tailored SAP solutions.</p>
+        <Link to="/Contactus">
         <button className="bg-white text-blue-900 px-4 py-3 font-bold rounded-full hover:bg-blue-100 transition">
           Talk to a Consultant
         </button>
+        </Link>
       </motion.div>
     </div>
   );

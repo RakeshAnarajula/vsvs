@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { FaChartLine, FaCog, FaDatabase } from "react-icons/fa";
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -216,9 +217,11 @@ const SAPAnalytics = () => {
         <p className="mb-4 text-lg">
           Unlock the power of SAP Analytics and take your business to the next level with actionable insights.
         </p>
+        <Link to="/Contactus">
         <button className="bg-white text-blue-900 px-4 py-3 font-bold rounded-full hover:bg-blue-100 transition">
           Contact Us for a Demo
         </button>
+        </Link>
       </motion.div>
     </div>
   );

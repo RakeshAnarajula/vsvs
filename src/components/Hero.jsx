@@ -154,7 +154,7 @@ export default function Hero() {
         transition={{ duration: 0.6 }}
         className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white text-center z-30 mb-8"
       >
-        VSVS TECH WAVES
+        VS TECH WAVES
       </motion.h2>
       <div className="max-w-6xl mx-auto text-center z-30 relative">
         <div className="min-h-48 flex items-center justify-center">

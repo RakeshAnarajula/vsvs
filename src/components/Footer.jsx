@@ -133,7 +133,7 @@ const Footer = () => {
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
         >
-          <p>© {currentYear} VSVS TECH WAVES. All rights reserved.</p>
+          <p>© {currentYear} VS TECH WAVES. All rights reserved.</p>
           <div className="mt-4 md:mt-0 flex items-center">
             <span className="text-gray-400">Designed and developed by </span>
             <motion.a

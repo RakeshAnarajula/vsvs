@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { FaBriefcase, FaCogs, FaIndustry, FaChartLine } from "react-icons/fa";
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -140,13 +141,14 @@ const ERPSolutions = () => {
     </h2>
     <ul className="list-disc pl-6 space-y-2 text-gray-700">
       <li>Fully integrated across all departments</li>
-      <li>Improved data visibility and decision-making</li>
-      <li>Enhanced efficiency through automated processes</li>
-      <li>Support for real-time reporting and analytics</li>
-      <li>Scalable as your business grows</li>
-    </ul>
-  </div>
-</motion.div>
+       <li>Improved data visibility and decision-making</li>
+       <li>Enhanced efficiency through automated processes</li>
+       <li>Support for real-time reporting and analytics</li>
+       <li>Scalable as your business grows</li>
+       <li>Minimized operational costs and redundancies</li>
+     </ul>
+     </div>
+  </motion.div>
       <motion.div
         variants={fadeUp}
         initial="hidden"
@@ -156,9 +158,11 @@ const ERPSolutions = () => {
       >
         <h3 className="text-2xl font-semibold">Ready to Transform Your Business?</h3>
         <p className="mb-2 text-lg">Let’s help you implement the best ERP solution for your organization’s needs.</p>
+        <Link to="/Contactus">
         <button className="bg-white text-blue-900 px-6 py-3 font-bold rounded-full hover:bg-blue-100 transition">
           Talk to an Expert
         </button>
+        </Link>
       </motion.div>
     </div>
   );

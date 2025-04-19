@@ -71,7 +71,7 @@ const Carrers = () => {
         transition={{ duration: 0.8 }}
         className="text-center max-w-4xl mx-auto"
       >
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-800">Careers at Our ERP Firm</h1>
+        <h1 className="text-3xl font-bold text-blue-800">Careers at VS TECH WAVES</h1>
         <p className="mt-4 text-gray-600 text-md sm:text-lg">
           Join a team that's shaping enterprise solutions with SAP and ERP excellence.
         </p>
@@ -154,7 +154,7 @@ const Carrers = () => {
         />
         <div className="md:w-[65%]">
           <p className="text-gray-700 text-md sm:text-md mb-4">
-            At vsvs tech waves, we specialize in SAP-powered transformation. Whether you're a FICO wizard, ABAP developer,
+            At vs tech waves, we specialize in SAP-powered transformation. Whether you're a FICO wizard, ABAP developer,
             or a BW/4HANA data scientist, we provide an ecosystem that supports learning, innovation, and high-impact delivery.
           </p>
           <ul className="list-disc pl-5 text-gray-700 space-y-2 text-sm sm:text-base">

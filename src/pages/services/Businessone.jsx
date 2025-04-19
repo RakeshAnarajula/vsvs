@@ -1,9 +1,6 @@
 import { motion } from "framer-motion";
-import {
-  FaChartBar, FaSync, FaMobileAlt, FaDatabase, FaLightbulb,
-  FaIndustry, FaShoppingCart, FaTruck, FaBriefcase,
-  FaMoneyBillWave, FaBoxes, FaUserFriends, FaShoppingBasket,
-  FaClipboardList, FaChartPie
+import { Link } from "react-router-dom";
+import {FaChartBar, FaSync, FaMobileAlt, FaDatabase, FaLightbulb,FaIndustry, FaShoppingCart, FaTruck, FaBriefcase,FaMoneyBillWave, FaBoxes, FaUserFriends, FaShoppingBasket,FaClipboardList, FaChartPie
 } from "react-icons/fa";
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -167,11 +164,13 @@ const SAPBusinessOne = () => {
             Why SAP Business One?
           </h2>
           <ul className="list-disc pl-6 text-gray-700 space-y-2">
-            <li>Affordable ERP for SMEs</li>
-            <li>Quick deployment and user-friendly interface</li>
-            <li>Customizable to fit your industry</li>
-            <li>Powerful reporting and forecasting tools</li>
-          </ul>
+             <li>Affordable ERP for SMEs</li>
+             <li>Quick deployment and user-friendly interface</li>
+             <li>Customizable to fit your industry</li>
+             <li>Powerful reporting and forecasting tools</li>
+             <li>Seamless integration with existing systems</li>
+             <li>Real-time data access for better decision-making</li>
+           </ul>
         </div>
       </motion.div>
       <motion.div
@@ -185,9 +184,11 @@ const SAPBusinessOne = () => {
         <p className="text-lg">
           Schedule a personalized demo and discover how SAP Business One can streamline your operations.
         </p>
+        <Link to="/Contactus">
         <button className="mt-4 px-6 py-3 bg-white text-blue-900 font-bold rounded-full shadow hover:bg-blue-100 transition">
           Schedule a Demo
         </button>
+        </Link>
       </motion.div>
     </div>
   );

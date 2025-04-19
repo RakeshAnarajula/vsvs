@@ -103,7 +103,6 @@ const PrivacyPolicy = () => {
                 <li>With your consent.</li>
               </ul>
             </motion.div>
-
             <motion.div variants={fadeIn} className="mb-10">
               <h2 className="text-xl font-semibold text-blue-900 mb-4">4. Data Security</h2>
               <p className="text-gray-700 mb-4">
