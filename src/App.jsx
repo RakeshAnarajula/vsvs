@@ -12,7 +12,7 @@ import Card from "./components/Card";
 import BusinessOne from './pages/services/Businessone';
 import Consulting from './pages/services/Consulting';
 import ERPsolutions from './pages/services/ERPsolutions';
-import Implementation from './pages/services/Implementation';
+import SapModules from "./pages/services/SapModules";
 import SAPanalytics from './pages/services/SAPanalytics';
 import Resources from "./pages/Resources";
 import Carrers from './pages/Carrers';
@@ -57,7 +57,7 @@ const App = () => {
             <Route path="/services/BusinessOne" element={<BusinessOne />} />
             <Route path="/services/Consulting" element={<Consulting />} />
             <Route path="/services/ERPsolutions" element={<ERPsolutions />} />
-            <Route path="/services/Implementation" element={<Implementation />} />
+            <Route path="/services/SapModules" element={< SapModules />} />
             <Route path="/services/SAPanalytics" element={<SAPanalytics />} />
             <Route path="/Resources" element={<Resources />} />
             <Route path="/carrers" element={<Carrers />} />

@@ -57,7 +57,7 @@ const AboutUs = () => {
           <img
             src="/our mission3.avif"
             alt="Mission 1"
-            className="w-full h-48 md:h-64 lg:h-72 object-cover rounded-lg shadow-md row-span-2"
+            className="w-full h-52 md:h-66 lg:h-76 object-cover rounded-lg shadow-md row-span-2"
           />
           <img
             src="/Cloud-Based Solutions.jpg"
@@ -109,7 +109,7 @@ const AboutUs = () => {
               </svg>
             </div>
             <h3 className="font-semibold text-lg mb-2">Location</h3>
-            <p className="text-gray-600 text-sm">Plot No.57, Ganesh Towers, Kakatiyanagar, Ashok Nagar, R C Puram, Telangana - 502032...</p>
+            <p className="text-gray-600 text-sm">Plot No.57, Ganesh Towers, Kakatiyanagar, Ashok Nagar, R C Puram, Telangana - 502032.</p>
           </motion.div>
           <motion.div 
             className="flex flex-col items-center text-center"

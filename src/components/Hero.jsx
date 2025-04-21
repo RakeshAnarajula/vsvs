@@ -3,16 +3,16 @@ import React, { useEffect, useState } from "react";
 export default function Hero() {
   const rotatingContent = [
     {
-      title: "SAP Implementation",
-      description: "Complete SAP solutions from setup to support for smooth digital transformation.",
+      title: "SAP CFIN",
+      description: "Consolidate financial data from various systems into a single platform for centralized reporting and analysis.",
     },
     {
-      title: "SAP Business One",
-      description: "Affordable, scalable ERP for small and mid-sized businesses.",
+      title: "SAP RAR",
+      description: "Improve revenue accounting and automate reporting across your enterprise.",
     },
     {
-      title: "SAP Consulting",
-      description: "Expert guidance to align SAP with your business goals.",
+      title: "Group Reporting",
+      description: "Manage financial data consolidation and ensure regulatory compliance across the organization.",
     },
     {
       title: "ERP Solutions",

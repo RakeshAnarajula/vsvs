@@ -15,7 +15,7 @@ const fadeUp = {
   }),
 };
 
-const SAPImplementation = () => {
+const SapModules = () => {
   const features = [
     {
       icon: <FaCogs />,
@@ -59,6 +59,21 @@ const SAPImplementation = () => {
 
   const modules = [
     {
+      title: "SAP CFIN",
+      icon: <FaFileInvoiceDollar />,
+      description: "Consolidate financial data from various systems into a single platform for centralized reporting and analysis.",
+    },
+    {
+      title: "Group Reporting",
+      icon: <FaChartLine />,
+      description: "Manage financial data consolidation and ensure regulatory compliance across the organization.",
+    },
+    {
+      title: "SAP RAR",
+      icon: <FaCheckCircle />,
+      description: "Improve revenue accounting and automate reporting across your enterprise.",
+    },
+    {
       title: "SAP FICO",
       icon: <FaFileInvoiceDollar />,
       description: "Manage financial accounting and reporting with precision.",
@@ -89,21 +104,6 @@ const SAPImplementation = () => {
       description: "Enhance customer engagement and retention.",
     },
     {
-      title: "SAP CFIN",
-      icon: <FaFileInvoiceDollar />,
-      description: "Consolidate financial data from various systems into a single platform for centralized reporting and analysis.",
-    },
-    {
-      title: "Group Reporting",
-      icon: <FaChartLine />,
-      description: "Manage financial data consolidation and ensure regulatory compliance across the organization.",
-    },
-    {
-      title: "SAP RAR",
-      icon: <FaCheckCircle />,
-      description: "Improve revenue accounting and automate reporting across your enterprise.",
-    },
-    {
       title: "SAP SuccessFactors",
       icon: <FaUsersCog />,
       description: "Empower your workforce with cloud-based HCM for recruiting, onboarding, performance, and learning.",
@@ -121,10 +121,10 @@ const SAPImplementation = () => {
       >
         <div>
           <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 mt-10">
-            SAP Implementation Services
+          SAP Modules We Offer
           </h1>
           <p className="text-lg text-gray-600">
-            Transform your business with expert SAP implementation and tailored enterprise solutions for sustainable growth.
+          Drive efficiency, agility, and innovation across all departments with our expert SAP module implementations.
           </p>
         </div>
         <img
@@ -152,38 +152,6 @@ const SAPImplementation = () => {
           </div>
         ))}
       </motion.div>
-
-      <div className="mt-20">
-        <motion.h2
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="text-3xl font-bold text-blue-900 text-center mb-8"
-        >
-          Our Implementation Approach
-        </motion.h2>
-        <div className="grid md:grid-cols-4 gap-6">
-          {approachSteps.map((step, idx) => (
-            <motion.div
-              key={idx}
-              custom={idx}
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              className="bg-white shadow-lg rounded-xl overflow-hidden"
-            >
-              <img src={step.img} alt={step.title} className="w-full h-40 object-cover" />
-              <div className="p-4">
-                <h4 className="font-bold text-blue-800 mb-2">{step.title}</h4>
-                <p className="text-gray-600 text-sm">{step.desc}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-
       <motion.section
         variants={fadeUp}
         initial="hidden"
@@ -210,6 +178,36 @@ const SAPImplementation = () => {
         </div>
       </motion.section>
 
+      <div>
+        <motion.h2
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="text-3xl font-bold text-blue-900 text-center mb-8"
+        >
+          Our Approach
+        </motion.h2>
+        <div className="grid md:grid-cols-4 gap-6">
+          {approachSteps.map((step, idx) => (
+            <motion.div
+              key={idx}
+              custom={idx}
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="bg-white shadow-lg rounded-xl overflow-hidden"
+            >
+              <img src={step.img} alt={step.title} className="w-full h-40 object-cover" />
+              <div className="p-4">
+                <h4 className="font-bold text-blue-800 mb-2">{step.title}</h4>
+                <p className="text-gray-600 text-sm">{step.desc}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
       <motion.div
         variants={fadeUp}
         initial="hidden"
@@ -217,7 +215,7 @@ const SAPImplementation = () => {
         viewport={{ once: true }}
         className="max-w-6xl mx-auto"
       >
-        <h2 className="text-3xl font-bold text-blue-900 text-center mb-8">Why Choose Us</h2>
+        <h2 className="text-3xl font-bold text-blue-900 text-center mb-8 py-10">Why Choose Us</h2>
         <div className="flex flex-col md:flex-row items-center gap-8">
           <img
             src="/team work.jpg"
@@ -228,10 +226,10 @@ const SAPImplementation = () => {
               <li>✔️ We have SAP expertise</li>
               <li>✔️ Dedicated SAP certified consultants</li>
               <li>✔️ Flexible delivery models</li>
-              <li>✔️ Proven track record in multiple industries</li>
-              <li>✔️ Customized solutions to meet client needs</li>
-             <li>✔️ Strong post-implementation support and training</li>
-             <li>✔️ Continuous innovation with latest SAP technologies</li>
+              <li>✔️ Proven record in multiple industries</li>
+              <li>✔️ Customized solutions meet client needs</li>
+             <li>✔️ Strong post-implementation support </li>
+             <li>✔️ Innovation with latest SAP technologies</li>
         </ul>
 
         </div>
@@ -242,7 +240,7 @@ const SAPImplementation = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="bg-blue-900 text-white p-8 rounded-2xl shadow-lg text-center mt-20"
+        className="bg-blue-900 text-white p-8 rounded-2xl shadow-lg text-center mt-10"
       >
         <h3 className="text-2xl font-semibold">Start Your SAP Journey Today</h3>
         <p className="text-lg mt-2">Let our experts help you achieve digital transformation with SAP.</p>
@@ -255,4 +253,4 @@ const SAPImplementation = () => {
     </div>
   );
 };
-export default SAPImplementation;
+export default SapModules;

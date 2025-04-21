@@ -142,11 +142,11 @@ const Navbar = () => {
     };
   }, []);
   const servicesItems = [
-    { label: "Implementation", path: "/services/Implementation" },
+    { label: " SAP Modules We Offer", path: "/services/SapModules" },
+    { label: "SAP Analytics", path: "/services/SAPanalytics" },
+    { label: "ERP Solutions", path: "/services/ERPsolutions" },
     { label: "Business One", path: "/services/Businessone" },
     { label: "Consulting", path: "/services/Consulting" },
-    { label: "ERP Solutions", path: "/services/ERPsolutions" },
-    { label: "SAP Analytics", path: "/services/SAPanalytics" },
   ];
   const isServicesActive = location.pathname.includes("/services");
   const getLogoSize = () => {
