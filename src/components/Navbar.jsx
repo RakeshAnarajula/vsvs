@@ -142,7 +142,7 @@ const Navbar = () => {
     };
   }, []);
   const servicesItems = [
-    { label: " SAP Modules We Offer", path: "/services/SapModules" },
+    { label: " Key SAP Modules Offering", path: "/services/SapModules" },
     { label: "SAP Analytics", path: "/services/SAPanalytics" },
     { label: "ERP Solutions", path: "/services/ERPsolutions" },
     { label: "Business One", path: "/services/Businessone" },
