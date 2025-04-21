@@ -161,7 +161,7 @@ const TermsOfServices = () => {
             <motion.div variants={fadeIn} className="mb-10">
               <h2 className="text-xl font-semibold text-blue-900 mb-4">11. Governing Law and Jurisdiction</h2>
               <p className="text-gray-700">
-                These Terms and any dispute or claim arising out of or in connection with them or their subject matter or formation shall be governed by and construed in accordance with the laws of the State of California, without giving effect to any choice or conflict of law provision or rule. Any legal suit, action, or proceeding arising out of, or related to, these Terms or the Services shall be instituted exclusively in the federal courts of the United States or the courts of the State of California.
+                These Terms and any dispute or claim arising out of or in connection with them or their subject matter or formation shall be governed by and construed in accordance with the laws of the State of Telangana, without giving effect to any choice or conflict of law provision or rule. Any legal suit, action, or proceeding arising out of, or related to, these Terms or the Services shall be instituted exclusively in the courts of the India or the courts of the State of Telangana.
               </p>
             </motion.div>
 
@@ -171,12 +171,12 @@ const TermsOfServices = () => {
                 If you have any questions about these Terms, please contact us at:
               </p>
               <div className="p-4 rounded">
-                <p className="text-lg text-gray-700">vsvs tech waves</p>
-                <p className="text-gray-700">USA</p>
-                <p className="text-gray-700">123 Tech Park, Silicon Valley</p>
-                <p className="text-gray-700">California, 94043</p>
-                <p className="text-gray-700">Email: legal@vsvstech.com</p>
-                <p className="text-gray-700">Phone: +1 (555) 123-4567</p>
+                <p className="text-lg text-gray-700">VS Tech Waves</p>
+                <p className="text-gray-700">Plot No.57, Ganesh Towers,</p>
+                <p className="text-gray-700">Kakatiyanagar, Ashok Nagar,R C Puram, </p>
+                <p className="text-gray-700">Telangana - 502032.</p>
+                <p className="text-gray-700">Email: HR@vsvstechwaves.com</p>
+                <p className="text-gray-700">Phone: +914040897477</p>
               </div>
             </motion.div>
           </motion.div>

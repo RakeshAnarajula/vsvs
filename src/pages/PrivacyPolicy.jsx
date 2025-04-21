@@ -125,13 +125,13 @@ const PrivacyPolicy = () => {
               <p className="text-gray-700 mb-4">
                 To ask questions or comment about this privacy policy and our privacy practices, contact us at:
               </p>
-              <div className=" p-4 rounded">
-                <p className="text-lg text-gray-700">vsvs tech waves</p>
-                <p className="text-gray-700">USA</p>
-                <p className="text-gray-700">123 Tech Park, Silicon Valley
-                California, 94043</p>
-                <p className="text-gray-700">Email: info@vsvstech.com</p>
-                <p className="text-gray-700">Phone: +1 (555) 123-4567</p>
+              <div className="p-4 rounded">
+                <p className="text-lg text-gray-700">VS Tech Waves</p>
+                <p className="text-gray-700">Plot No.57, Ganesh Towers,</p>
+                <p className="text-gray-700">Kakatiyanagar, Ashok Nagar,R C Puram, </p>
+                <p className="text-gray-700">Telangana - 502032.</p>
+                <p className="text-gray-700">Email: HR@vsvstechwaves.com</p>
+                <p className="text-gray-700">Phone: +914040897477</p>
               </div>
             </motion.div>
           </motion.div>
