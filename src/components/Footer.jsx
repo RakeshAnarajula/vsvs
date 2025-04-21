@@ -86,7 +86,7 @@ const Footer = () => {
               <FooterLink to="/contactus">Contact Us</FooterLink>
             </FooterSection>
             <FooterSection title="SERVICES" icon={FaServicestack}>
-            <FooterLink to="/services/SapModules">SAP Modules We Offer</FooterLink>
+            <FooterLink to="/services/SapModules">Key SAP Modules Offering</FooterLink>
             <FooterLink to="/services/SAPanalytics">SAP Analytics</FooterLink>
               <FooterLink to="/services/ERPsolutions">ERP Solutions</FooterLink>
               <FooterLink to="/services/Businessone">Business One</FooterLink>
