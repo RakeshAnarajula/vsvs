@@ -61,17 +61,17 @@ const SapModules = () => {
     {
       title: "SAP CFIN",
       icon: <FaFileInvoiceDollar />,
-      description: "Consolidate financial data from various systems into a single platform for centralized reporting and analysis.",
+      description: "Consolidates financial data from varies systems into a single system, central plat form for reporting and analysis.",
     },
     {
       title: "Group Reporting",
       icon: <FaChartLine />,
-      description: "Manage financial data consolidation and ensure regulatory compliance across the organization.",
+      description: "Manage data consolidation and regulatory Compliance.",
     },
     {
       title: "SAP RAR",
       icon: <FaCheckCircle />,
-      description: "Improve revenue accounting and automate reporting across your enterprise.",
+      description: "More efficient revenue accounting and reporting functions across the entire enterprise.",
     },
     {
       title: "SAP FICO",

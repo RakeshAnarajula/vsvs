@@ -8,11 +8,11 @@ export default function Hero() {
     },
     {
       title: "SAP RAR",
-      description: "Improve revenue accounting and automate reporting across your enterprise.",
+      description: "More efficient revenue accounting and reporting functions across the entire enterprise.",
     },
     {
       title: "Group Reporting",
-      description: "Manage financial data consolidation and ensure regulatory compliance across the organization.",
+      description: "Manage data consolidation and regulatory Compliance.",
     },
     {
       title: "ERP Solutions",
