@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Mail,Phone,MapPin,Send,User,MessageCircle,} from 'lucide-react';
+import {Mail, Phone, MapPin, Send, User, MessageCircle, ExternalLink} from 'lucide-react';
 const Contactus = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -9,7 +9,6 @@ const Contactus = () => {
   });
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -21,7 +20,6 @@ const Contactus = () => {
       [name]: '',
     }));
   };
-
   const validateForm = () => {
     const newErrors = {};
     if (!formData.name.trim()) newErrors.name = 'Name is required.';
@@ -34,7 +32,6 @@ const Contactus = () => {
     if (!formData.message.trim()) newErrors.message = 'Message is required.';
     return newErrors;
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = validateForm();
@@ -45,7 +42,7 @@ const Contactus = () => {
     console.log('Form Submitted', formData);
     setIsSubmitted(true);
   };
-
+  const location = "Plot No.57, Ganesh Towers, Kakatiyanagar, Ashok Nagar, R C Puram, Telangana - 502032";
   return (
     <div className="py-10 px-4 sm:px-6 lg:px-10">
       <div className="container mx-auto max-w-6xl">
@@ -63,15 +60,27 @@ const Contactus = () => {
                   <span className="text-gray-200">+914040897477</span>
                 </div>
                 <div className="flex items-center space-x-4">
-                <MapPin size={24} className="text-blue-300 mr-2 mb-6 flex-shrink-0" />
-                <span className="text-gray-200">Plot No.57, Ganesh Towers, Kakatiyanagar, Ashok Nagar, R C Puram, Telangana - 502032</span>
+                  <MapPin size={24} className="text-blue-300 mr-2 flex-shrink-0" />
+                  <span className="text-gray-200">{location}</span>
                 </div>
               </div>
+            </div>
+            <div className="mt-8 h-64 w-full rounded-lg overflow-hidden relative">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15150.467462111996!2d78.30189099999999!3d17.5059585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb92a4013d1dbd%3A0x81b9e8255f4e8326!2sAshok%20Nagar%2C%20Ramachandrapuram%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1713937265086!5m2!1sen!2sin"
+                width="100%" 
+                height="100%" 
+                style={{border: 0}} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Office Location"
+                className="rounded-lg shadow-md"
+              ></iframe>
             </div>
             <div className="absolute -top-16 -right-16 w-48 h-48 bg-white/10 rounded-full"></div>
             <div className="absolute -bottom-16 -left-16 w-48 h-48 bg-white/10 rounded-full"></div>
           </div>
-
           <div className="p-10 bg-gradient-to-br from-blue-900 to-blue-900 text-white">
             {!isSubmitted ? (
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -161,7 +170,7 @@ const Contactus = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-blue-700 text-white py-3 rounded-full hover:from-blue-600 hover:to-blue-600 transition flex items-center justify-center space-x-2 group"
+                  className="w-full bg-blue-700 text-white py-3 rounded-full hover:bg-blue-800 transition flex items-center justify-center space-x-2 group"
                 >
                   <span>Send Message</span>
                   <Send className="w-5 h-5 group-hover:translate-x-1 transition" />
@@ -196,5 +205,4 @@ const Contactus = () => {
     </div>
   );
 };
-
 export default Contactus;
