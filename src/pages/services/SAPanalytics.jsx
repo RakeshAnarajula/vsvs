@@ -16,7 +16,7 @@ const SAPAnalytics = () => {
         className="grid md:grid-cols-2 items-center gap-12"
       >
         <div>
-          <h1 className="text-4xl font-bold text-blue-900 mb-6 mt-6">
+          <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6 mt-6">
             Unlock Insights with SAP Analytics
           </h1>
           <p className="text-lg text-gray-600">

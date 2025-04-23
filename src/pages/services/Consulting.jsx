@@ -16,7 +16,7 @@ const SAPConsulting = () => {
         className="grid md:grid-cols-2 items-center gap-10"
       >
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 mt-10">
+          <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4 mt-10">
             SAP Consulting Services
           </h1>
           <p className="text-lg text-gray-600">

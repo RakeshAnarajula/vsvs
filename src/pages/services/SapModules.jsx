@@ -120,7 +120,7 @@ const SapModules = () => {
         className="grid md:grid-cols-2 gap-10 items-center"
       >
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 mt-10">
+          <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4 mt-10">
           SAP Modules We Offer
           </h1>
           <p className="text-lg text-gray-600">
@@ -159,7 +159,7 @@ const SapModules = () => {
         viewport={{ once: true }}
         className="py-20"
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-blue-900 text-center mb-10">
+        <h2 className="text-3xl md:text-3xl font-bold text-blue-900 text-center mb-10">
           Key SAP Modules We Offer
         </h2>
         <div className="grid md:grid-cols-2 gap-6">

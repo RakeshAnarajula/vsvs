@@ -68,7 +68,7 @@ const SAPBusinessOne = () => {
         className="grid md:grid-cols-2 gap-10 items-center"
       >
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 mt-10">
+          <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4 mt-10">
             SAP Business One Solutions
           </h1>
           <p className="text-lg text-gray-600">
@@ -78,7 +78,7 @@ const SAPBusinessOne = () => {
         <img
           src="/sap business.avif"
           alt="SAP Hero"
-          className="rounded-2xl shadow-lg w-full h-56 md:h-64 lg:h-60 object-cover" // 🔽 Reduced height for laptop/desktop
+          className="rounded-2xl shadow-lg w-full h-56 md:h-64 lg:h-60 object-cover"
         />
       </motion.div>
       <motion.div variants={fadeInUp} initial="hidden" animate="visible" className="text-center">

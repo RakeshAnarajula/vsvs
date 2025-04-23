@@ -15,7 +15,7 @@ const ERPSolutions = () => {
         className="grid md:grid-cols-2 items-center gap-12"
       >
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 mt-10">
+          <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4 mt-10">
             ERP Solutions for Business Transformation
           </h1>
           <p className="text-lg text-gray-600">
@@ -25,7 +25,7 @@ const ERPSolutions = () => {
         <img
           src="/ERP Solutions.jpg"
           alt="ERP Solutions"
-          className="rounded-xl shadow-lg w-full "
+          className="rounded-2xl shadow-lg w-full h-56 md:h-64 lg:h-60 object-cover"
         />
       </motion.div>
       <motion.div
