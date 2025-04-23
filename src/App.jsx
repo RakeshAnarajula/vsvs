@@ -7,6 +7,7 @@ import Loader from "./components/Loader";
 import Hero from "./components/Hero";
 import Aboutus from "./components/Aboutus";
 import OurServices from "./components/OurServices";
+import Whychooseus from "./components/Whychooseus";
 import Card from "./components/Card";
 
 import BusinessOne from './pages/services/Businessone';
@@ -49,6 +50,7 @@ const App = () => {
                   <Hero />
                   <Aboutus />
                   <OurServices />
+                  <Whychooseus/>
                   <Card />
                 </>
               }

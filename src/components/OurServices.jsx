@@ -1,61 +1,42 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { DatabaseIcon, BarChart4, Building2, Network, LineChart } from "lucide-react";
 const OurServices = () => {
   const services = [
     {
       id: 1,
-      title: "SAP Implementation",
+      title: "SAP CFIN",
       description:
-        "End-to-end SAP implementation services tailored to your business needs. Our certified consultants ensure smooth transitions with minimal disruption to your operations.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-        </svg>
-      )
+        "SAP CFIN consolidates financial data from various systems into a single, centralized platform for real-time reporting and advanced financial analysis.",
+      icon: <DatabaseIcon className="h-12 w-12 mx-auto text-gray-900" strokeWidth={1.5} />
     },
     {
       id: 2,
-      title: "SAP Business One",
+      title: "SAP RAR",
       description:
-        "Streamline operations with SAP Business One, the comprehensive business management solution designed specifically for small and midsize enterprises.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-      )
+        "SAP RAR streamlines revenue recognition processes with automation and compliance for complex billing and contract scenarios.",
+      icon: <BarChart4 className="h-12 w-12 mx-auto text-gray-900" strokeWidth={1.5} />
     },
     {
       id: 3,
-      title: "SAP Consulting",
+      title: "Group Reporting",
       description:
-        "Strategic guidance from our experienced SAP consultants to maximize your ROI. We help you leverage SAP technologies to achieve business objectives.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-        </svg>
-      )
+        "Enables seamless financial data consolidation and real-time visibility across entities, ensuring faster and more accurate group close processes.",
+      icon: <Building2 className="h-12 w-12 mx-auto text-gray-900" strokeWidth={1.5} />
     },
     {
       id: 4,
-      title: "ERP Solutions",
-      description:
-        "Comprehensive ERP solutions that integrate all aspects of your business including finance, HR, manufacturing, supply chain, services, and procurement.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-        </svg>
-      )
-    },
-    {
-      id: 5,
       title: "SAP Analytics",
       description:
         "Transform data into actionable insights with our SAP Analytics services. Make informed decisions faster with real-time dashboards and predictive analytics.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-        </svg>
-      )
+      icon: <LineChart className="h-12 w-12 mx-auto text-gray-900" strokeWidth={1.5} />
+    },
+    {
+      id: 5,
+      title: "ERP Solutions",
+      description:
+        "Comprehensive ERP solutions that integrate all aspects of your business including finance, HR, manufacturing, supply chain, services, and procurement.",
+      icon: <Network className="h-12 w-12 mx-auto text-gray-900" strokeWidth={1.5} />
     }
   ];
 
@@ -93,7 +74,7 @@ const OurServices = () => {
   };
 
   return (
-    <section className=" py-4 bg-gradient-to-b from-white to-blue-50">
+    <section className="py-4 bg-blue-50">
       <div className="max-w-8xl mx-auto px-4 sm:px-4 lg:px-20">
         <motion.div
           className="text-center mb-10"
@@ -104,7 +85,8 @@ const OurServices = () => {
         >
           <h2 className="text-3xl font-bold text-blue-900 mb-4">Our Services</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-          Empowering businesses through tailored SAP and ERP services that enhance agility, improve efficiency, and enable data-driven decision-making across all operations.          </p>
+            Empowering businesses through tailored SAP and ERP services that enhance agility, improve efficiency, and enable data-driven decision-making across all operations.
+          </p>
         </motion.div>
 
         <motion.div
@@ -133,4 +115,5 @@ const OurServices = () => {
     </section>
   );
 };
+
 export default OurServices;

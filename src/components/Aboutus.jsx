@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 export default function VisionMission() {
   return (
-    <div className="bg-white px-6 py-10 md:px-20 space-y-10">
+    <div className="bg-blue-50 px-6 py-10 md:px-20 space-y-10">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
