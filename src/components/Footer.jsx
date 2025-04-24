@@ -135,7 +135,7 @@ const Footer = () => {
         >
           <p>© {currentYear} VS TECH WAVES. All rights reserved.</p>
           <div className="mt-4 md:mt-0 flex items-center">
-            <span className="text-gray-400">Designed and developed by </span>
+            <span className="text-gray-400">Designed & Developed by </span>
             <motion.a
               href="https://virtutechsolutions.com"
               target="_blank"
