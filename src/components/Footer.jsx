@@ -45,7 +45,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-br from-blue-900 to-blue-950 text-white pt-16 pb-8">
+    <footer className="bg-gradient-to-br from-blue-900 to-blue-950 text-white pt-16 pb-8 px-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
           <div className="lg:col-span-1">
@@ -127,7 +127,7 @@ const Footer = () => {
           </motion.div>
         </div>
         <motion.div
-          className="mt-12 pt-8 border-t border-blue-800/50 text-gray-400 text-sm flex flex-col md:flex-row justify-between items-center"
+          className="mt-4 pt-4 border-t border-blue-800/50 text-gray-400 text-sm flex flex-col md:flex-row justify-between items-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
