@@ -243,9 +243,9 @@ const SapModules = () => {
         className="bg-blue-900 text-white p-8 rounded-2xl shadow-lg text-center mt-10"
       >
         <h3 className="text-2xl font-semibold">Start Your SAP Journey Today</h3>
-        <p className="text-lg mt-2">Let our experts help you achieve digital transformation with SAP.</p>
+        <p className="text-lg">Let our experts help you achieve digital transformation with SAP.</p>
         <Link to="/Contactus">
-        <button className="mt-4 px-6 py-3 bg-white text-blue-900 font-semibold rounded-full hover:bg-blue-100 transition">
+        <button className="mt-2 px-4 py-3 bg-white text-blue-900 font-semibold rounded-full hover:bg-blue-100 transition">
           Request a Free Demo
         </button>
         </Link>

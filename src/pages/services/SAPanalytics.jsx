@@ -214,7 +214,7 @@ const SAPAnalytics = () => {
         className="bg-blue-900 text-white p-6 rounded-2xl text-center shadow-2xl"
       >
         <h3 className="text-2xl font-semibold">Ready to Transform Your Data?</h3>
-        <p className="mb-4 text-lg">
+        <p className="mb-2 text-lg">
           Unlock the power of SAP Analytics and take your business to the next level with actionable insights.
         </p>
         <Link to="/Contactus">

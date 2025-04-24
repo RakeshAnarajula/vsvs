@@ -158,8 +158,8 @@ const SAPConsulting = () => {
         viewport={{ once: true }}
         className="bg-blue-900 text-white p-6 rounded-2xl text-center shadow-2xl"
       >
-        <h3 className="text-2xl font-semibold mb-4">Looking to Elevate Your SAP Experience?</h3>
-        <p className="mb-4 text-lg">Let’s collaborate to drive business transformation through tailored SAP solutions.</p>
+        <h3 className="text-2xl font-semibold ">Looking to Elevate Your SAP Experience?</h3>
+        <p className="mb-2 text-lg">Let’s collaborate to drive business transformation through tailored SAP solutions.</p>
         <Link to="/Contactus">
         <button className="bg-white text-blue-900 px-4 py-3 font-bold rounded-full hover:bg-blue-100 transition">
           Talk to a Consultant
