@@ -34,11 +34,17 @@ const NavLink = ({ to, children, isMobile, onClick }) => {
 };
 const Dropdown = ({ title, items, isActive, isMobile, closeMenu }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isHovered,] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const location = useLocation();
   const isAnyItemActive = items.some(item => location.pathname.startsWith(item.path));
-  const handleMouseEnter = () => !isMobile && setIsOpen(true);
-  const handleMouseLeave = () => !isMobile && setIsOpen(false);
+  const handleMouseEnter = () => {
+    !isMobile && setIsOpen(true);
+    setIsHovered(true);
+  };
+  const handleMouseLeave = () => {
+    !isMobile && setIsOpen(false);
+    setIsHovered(false);
+  };
   const toggleMobileDropdown = (e) => {
     if (isMobile) {
       e.stopPropagation();
@@ -127,12 +133,16 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
-      setShowScrollButton(window.scrollY > 300);
+      setShowScrollButton(window.scrollY > 300 && window.innerWidth >= 768);
     };
-
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
-      if (window.innerWidth >= 768) setMobileMenuOpen(false);
+      if (window.innerWidth >= 768) {
+        setMobileMenuOpen(false);
+        setShowScrollButton(window.scrollY > 300 && window.innerWidth >= 768);
+      } else {
+        setShowScrollButton(false);
+      }
     };
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
@@ -243,12 +253,12 @@ const Navbar = () => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             onClick={scrollToTop}
-            className={`fixed ${windowWidth <= 640 ? "bottom-2 right-4 p-2" : "bottom-8 right-8 p-3"} bg-blue-800 hover:bg-blue-800 text-white rounded-full shadow-lg z-50`}
+            className="fixed bottom-6 right-6 p-2 bg-blue-900 hover:bg-blue-800 text-white rounded-full shadow-lg z-50 cursor-pointer"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             aria-label="Scroll to top"
           >
-            <ArrowUp size={windowWidth <= 640 ? 40 : 24} />
+            <ArrowUp size={30} />
           </motion.button>
         )}
       </AnimatePresence>
