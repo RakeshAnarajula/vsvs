@@ -1,11 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaChartLine, FaCog, FaDatabase } from "react-icons/fa";
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
-
 const SAPAnalytics = () => {
   return (
     <div className="bg-gray-100 py-2 px-4 md:px-20 space-y-10 text-gray-800">
@@ -38,17 +36,17 @@ const SAPAnalytics = () => {
       >
         {[
           {
-            icon: <FaChartLine />,
+            icon: "https://img.icons8.com/color/96/000000/positive-dynamic.png",
             title: "Real-time Analytics",
             desc: "Track real-time data to stay ahead of business trends.",
           },
           {
-            icon: <FaDatabase />,
+            icon: "https://img.icons8.com/color/96/000000/data-configuration.png",
             title: "Data Integration",
             desc: "Seamlessly integrate data from multiple sources into a unified dashboard.",
           },
           {
-            icon: <FaCog />,
+            icon: "https://img.icons8.com/color/96/000000/settings.png",
             title: "Customizable Reports",
             desc: "Generate tailored reports to suit your business needs and key metrics.",
           },
@@ -61,7 +59,7 @@ const SAPAnalytics = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <div className="text-4xl text-blue-700 mb-4">{item.icon}</div>
+            <img src={item.icon} alt={item.title} className="w-16 h-16 mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-blue-800 mb-2">{item.title}</h3>
             <p className="text-gray-600 text-sm">{item.desc}</p>
           </motion.div>

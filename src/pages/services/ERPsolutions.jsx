@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaBriefcase, FaCogs, FaIndustry, FaChartLine } from "react-icons/fa";
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
@@ -36,10 +35,26 @@ const ERPSolutions = () => {
         className="grid md:grid-cols-4 gap-4 text-center"
       >
         {[ 
-          { icon: <FaBriefcase />, title: "Comprehensive ERP Solutions", desc: "Streamline all aspects of your business with tailored ERP systems." },
-          { icon: <FaCogs />, title: "Seamless Integration", desc: "Integrate ERP with existing systems for a smooth transition and continuous performance." },
-          { icon: <FaIndustry />, title: "Industry-Specific Solutions", desc: "Customize ERP to meet the unique needs of manufacturing, retail, and services sectors." },
-          { icon: <FaChartLine />, title: "Analytics & Reporting", desc: "Leverage real-time data to make smarter, data-driven decisions and drive growth." }
+          { 
+            icon: "/manufacturing.png", 
+            title: "Comprehensive ERP Solutions", 
+            desc: "Streamline all aspects of your business with tailored ERP systems." 
+          },
+          { 
+            icon: "/Seamless Integration.png", 
+            title: "Seamless Integration", 
+            desc: "Integrate ERP with existing systems for a smooth transition and continuous performance." 
+          },
+          { 
+            icon: "/Certified SAP Expertise.png", 
+            title: "Industry-Specific Solutions", 
+            desc: "Customize ERP to meet the unique needs of manufacturing, retail, and services sectors." 
+          },
+          { 
+            icon: "/Analytics & Reporting.png", 
+            title: "Analytics & Reporting", 
+            desc: "Leverage real-time data to make smarter, data-driven decisions and drive growth." 
+          }
         ].map((item, idx) => (
           <motion.div
             key={idx}
@@ -49,7 +64,7 @@ const ERPSolutions = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <div className="text-4xl text-blue-700 mb-4">{item.icon}</div>
+            <img src={item.icon} alt={item.title} className="w-16 h-16 mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-blue-800 mb-2">{item.title}</h3>
             <p className="text-gray-600 text-sm">{item.desc}</p>
           </motion.div>
@@ -119,36 +134,36 @@ const ERPSolutions = () => {
         </div>
       </motion.div>
       <motion.div
-  variants={fadeUp}
-  initial="hidden"
-  whileInView="visible"
-  viewport={{ once: true }}
-  className="grid md:grid-cols-2 items-start md:items-center gap-12"
->
-  <h2 className="text-3xl font-bold text-blue-900 text-center md:hidden order-1">
-    Why Choose Our ERP Solutions?
-  </h2>
-  <div className="order-2 md:order-1">
-    <img
-      src="/Why Choose Our ERP Solutions.jpg"
-      alt="Benefits"
-      className="rounded-xl shadow-xl w-full h-72 object-cover"
-    />
-  </div>
-  <div className="order-3 md:order-2 space-y-6">
-    <h2 className="hidden md:block text-3xl font-bold text-blue-900 mb-2">
-      Why Choose Our ERP Solutions?
-    </h2>
-    <ul className="list-disc pl-6 space-y-2 text-gray-700">
-      <li>Fully integrated across all departments</li>
-       <li>Improved data visibility and decision-making</li>
-       <li>Enhanced efficiency through automated processes</li>
-       <li>Support for real-time reporting and analytics</li>
-       <li>Scalable as your business grows</li>
-       <li>Minimized operational costs and redundancies</li>
-     </ul>
-     </div>
-  </motion.div>
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="grid md:grid-cols-2 items-start md:items-center gap-12"
+      >
+        <h2 className="text-3xl font-bold text-blue-900 text-center md:hidden order-1">
+          Why Choose Our ERP Solutions?
+        </h2>
+        <div className="order-2 md:order-1">
+          <img
+            src="/Why Choose Our ERP Solutions.jpg"
+            alt="Benefits"
+            className="rounded-xl shadow-xl w-full h-72 object-cover"
+          />
+        </div>
+        <div className="order-3 md:order-2 space-y-6">
+          <h2 className="hidden md:block text-3xl font-bold text-blue-900 mb-2">
+            Why Choose Our ERP Solutions?
+          </h2>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>Fully integrated across all departments</li>
+            <li>Improved data visibility and decision-making</li>
+            <li>Enhanced efficiency through automated processes</li>
+            <li>Support for real-time reporting and analytics</li>
+            <li>Scalable as your business grows</li>
+            <li>Minimized operational costs and redundancies</li>
+          </ul>
+        </div>
+      </motion.div>
       <motion.div
         variants={fadeUp}
         initial="hidden"
@@ -157,7 +172,7 @@ const ERPSolutions = () => {
         className="bg-blue-900 text-white p-4 rounded-2xl text-center shadow-2xl"
       >
         <h3 className="text-2xl font-semibold">Ready to Transform Your Business?</h3>
-        <p className="mb-2 text-lg">Let’s help you implement the best ERP solution for your organization’s needs.</p>
+        <p className="mb-2 text-lg">Let's help you implement the best ERP solution for your organization's needs.</p>
         <Link to="/Contactus">
         <button className="bg-white text-blue-900 px-6 py-3 font-bold rounded-full hover:bg-blue-100 transition">
           Talk to an Expert

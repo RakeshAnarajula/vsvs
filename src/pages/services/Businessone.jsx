@@ -1,25 +1,67 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import {FaChartBar, FaSync, FaMobileAlt, FaDatabase, FaLightbulb,FaIndustry, FaShoppingCart, FaTruck, FaBriefcase,FaMoneyBillWave, FaBoxes, FaUserFriends, FaShoppingBasket,FaClipboardList, FaChartPie
-} from "react-icons/fa";
+import {FaMoneyBillWave, FaBoxes, FaUserFriends, FaShoppingBasket, FaClipboardList, FaChartPie} from "react-icons/fa";
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 const SAPBusinessOne = () => {
   const features = [
-    { icon: <FaChartBar />, title: "Real-Time Analytics", desc: "Make faster decisions with instant access to business data." },
-    { icon: <FaSync />, title: "Integrated Processes", desc: "Streamline operations across finance, sales, and inventory." },
-    { icon: <FaMobileAlt />, title: "Mobile Ready", desc: "Access insights anytime, anywhere from mobile devices." },
-    { icon: <FaDatabase />, title: "Centralized Data", desc: "Unify your business data under one secure platform." },
-    { icon: <FaLightbulb />, title: "Scalable & Flexible", desc: "Grow your system as your business evolves." },
+    { 
+      icon: <img src="https://img.icons8.com/color/48/analytics.png" alt="Analytics" />, 
+      title: "Real-Time Analytics", 
+      desc: "Make faster decisions with instant access to business data." 
+    },
+    { 
+      icon: <img src="https://img.icons8.com/color/48/synchronize.png" alt="Integrated Processes" />, 
+      title: "Integrated Processes", 
+      desc: "Streamline operations across finance, sales, and inventory." 
+    },
+    { 
+      icon: <img src="https://img.icons8.com/color/48/smartphone.png" alt="Mobile Ready" />, 
+      title: "Mobile Ready", 
+      desc: "Access insights anytime, anywhere from mobile devices." 
+    },
+    { 
+      icon: <img src="https://img.icons8.com/color/48/database.png" alt="Centralized Data" />, 
+      title: "Centralized Data", 
+      desc: "Unify your business data under one secure platform." 
+    },
+    { 
+      icon: <img src="https://img.icons8.com/color/48/idea.png" alt="Scalable & Flexible" />, 
+      title: "Scalable & Flexible", 
+      desc: "Grow your system as your business evolves." 
+    },
+    { 
+      icon: <img src="https://img.icons8.com/color/48/security-checked.png" alt="Enhanced Security" />, 
+      title: "Enhanced Security", 
+      desc: "Protect your business data with advanced security protocols." 
+    },
   ];
+
   const industries = [
-    { icon: <FaIndustry />, title: "Manufacturing", desc: "Optimize production planning and material tracking." },
-    { icon: <FaShoppingCart />, title: "Retail", desc: "Manage inventory and multi-channel sales in one place." },
-    { icon: <FaTruck />, title: "Logistics", desc: "Track shipments, warehouse management, and procurement." },
-    { icon: <FaBriefcase />, title: "Professional Services", desc: "Deliver seamless customer experiences and project tracking." },
+    { 
+      icon: <img src="/manufacturing.png" alt="Manufacturing" />, 
+      title: "Manufacturing", 
+      desc: "Optimize production planning and material tracking." 
+    },
+    { 
+      icon: <img src="/Retail.png" alt="Retail" />, 
+      title: "Retail", 
+      desc: "Manage inventory and multi-channel sales in one place." 
+    },
+    { 
+      icon: <img src="/Logistics.png" alt="Logistics" />, 
+      title: "Logistics", 
+      desc: "Track shipments, warehouse management, and procurement." 
+    },
+    { 
+      icon: <img src="/Professional Services.png" alt="Professional Services" />, 
+      title: "Professional Services", 
+      desc: "Deliver seamless customer experiences and project tracking." 
+    },
   ];
+
   const modules = [
     {
       name: "Financial Management",
@@ -61,7 +103,7 @@ const SAPBusinessOne = () => {
 
   return (
     <div className="bg-gray-50 min-h-screen px-4 md:px-20 py-2 space-y-6 text-gray-800">
-            <motion.div
+      <motion.div
         variants={fadeInUp}
         initial="hidden"
         animate="visible"
@@ -93,7 +135,7 @@ const SAPBusinessOne = () => {
               initial="hidden"
               viewport={{ once: true }}
             >
-              <div className="text-4xl text-blue-700 mb-4">{item.icon}</div>
+              <div className="flex justify-center mb-4">{item.icon}</div>
               <h3 className="text-xl font-semibold text-blue-800 mb-2">{item.title}</h3>
               <p className="text-gray-600">{item.desc}</p>
             </motion.div>
@@ -135,7 +177,7 @@ const SAPBusinessOne = () => {
         <div className="grid md:grid-cols-4 gap-8 text-center">
           {industries.map((ind, index) => (
             <div key={index} className="bg-white p-6 rounded-xl shadow hover:shadow-lg">
-              <div className="text-4xl text-blue-800 mb-4 mx-auto">{ind.icon}</div>
+              <div className="flex justify-center mb-4">{ind.icon}</div>
               <h4 className="font-bold text-lg mb-1">{ind.title}</h4>
               <p className="text-sm text-gray-600">{ind.desc}</p>
             </div>

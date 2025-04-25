@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import {BookOpen,Settings,Puzzle,Network,TrendingUp,ServerCog,} from 'lucide-react';
 const blogPosts = [
   {
     id: 1,
@@ -22,7 +21,7 @@ const blogPosts = [
     id: 3,
     title: 'SAP S/4HANA: What You Need to Know',
     excerpt:
-      'An in-depth look into SAP S/4HANA features, benefits, and why it’s the future of enterprise management.',
+      'An in-depth look into SAP S/4HANA features, benefits, and why its the future of enterprise management.',
     image: '/Cloud-Based Solutions.jpg',
     date: 'March 15, 2025',
   },
@@ -33,42 +32,49 @@ const extraContent = [
     title: 'Complete Guide to ERP Implementation',
     description:
       'Step-by-step planning and execution strategies for a successful ERP rollout.',
-    icon: <BookOpen className="w-10 h-10 text-blue-800" />,
+    iconUrl: '/Complete Guide to ERP Implementation.png',
+    altText: 'Open Book Icon'
   },
   {
     title: 'Understanding SAP Modules',
     description:
       'Explore SAP modules like FI, MM, SD, HR, and how they enhance enterprise functionality.',
-    icon: <Settings className="w-10 h-10 text-blue-800" />,
+    iconUrl: '/Continuous Learning.png',
+    altText: 'Settings Gear Icon'
   },
   {
     title: 'Best Practices for ERP Integration',
     description:
       'Learn to connect ERP systems with other platforms for streamlined operations.',
-    icon: <Puzzle className="w-10 h-10 text-blue-800" />,
+    iconUrl: '/Best Practices for ERP Integration.png',
+    altText: 'Puzzle Piece Icon'
   },
   {
     title: 'Cloud vs On-Premise ERP',
     description:
       'Analyze the pros and cons of cloud-based vs traditional ERP deployment.',
-    icon: <Network className="w-10 h-10 text-blue-800" />,
+    iconUrl: '/Cloud vs On-Premise ERP.png',
+    altText: 'Cloud Network Icon'
   },
   {
     title: 'Future Trends in ERP & SAP',
     description:
       'Discover emerging trends like AI, machine learning, and automation in ERP.',
-    icon: <TrendingUp className="w-10 h-10 text-blue-800" />,
+    iconUrl: '/Future Trends in ERP & SAP.png',
+    altText: 'Trending Up Graph Icon'
   },
   {
     title: 'Data Security in ERP Systems',
     description:
       'Understand how to secure your ERP data and comply with industry standards.',
-    icon: <ServerCog className="w-10 h-10 text-blue-800" />,
+    iconUrl: '/Data Security in ERP Systems.png',
+    altText: 'Server Security Icon'
   },
 ];
+
 const Resources = () => {
   return (
-    <div className="min-h-screen  sm:px-4 lg:px-20 bg-gray-50 text-gray-800 px-4 py-10 space-y-10 ">
+    <div className="min-h-screen sm:px-4 lg:px-20 bg-gray-50 text-gray-800 px-4 py-10 space-y-10">
       <section className="text-center max-w-3xl mx-auto mb-4">
         <motion.h1
           initial={{ opacity: 0, y: -40 }}
@@ -87,6 +93,7 @@ const Resources = () => {
           Stay up-to-date with the latest trends, news, and strategies in SAP and ERP solutions.
         </motion.p>
       </section>
+      
       <motion.section
         className="max-w-[1800px] mx-auto flex flex-col md:flex-row items-center gap-6 bg-white shadow-lg rounded-2xl p-6"
         initial={{ opacity: 0, y: 40 }}
@@ -97,7 +104,7 @@ const Resources = () => {
         <motion.img
           src="/Customizable Modules.jpg"
           alt="Featured"
-          className="w-full md:w-[35%]  rounded-xl object-cover"
+          className="w-full md:w-[35%] rounded-xl object-cover"
           transition={{ duration: 0.3 }}
         />
         <div className="md:w-[65%]">
@@ -123,6 +130,7 @@ const Resources = () => {
           </motion.p>
         </div>
       </motion.section>
+      
       <section className="grid md:grid-cols-3 gap-8 max-w-[1800px] mx-auto px-4">
         {blogPosts.map((post, index) => (
           <motion.div
@@ -147,6 +155,7 @@ const Resources = () => {
           </motion.div>
         ))}
       </section>
+      
       <section className="max-w-[1800px] px-4 mx-auto text-center">
         <h2 className="text-3xl font-bold text-blue-800 mb-10">Explore More About ERP & SAP</h2>
         <div className="grid md:grid-cols-3 gap-8">
@@ -159,13 +168,20 @@ const Resources = () => {
               transition={{ delay: index * 0.2, duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <div className="flex justify-center mb-4">{item.icon}</div>
+              <div className="flex justify-center mb-4">
+                <img 
+                  src={item.iconUrl} 
+                  alt={item.altText} 
+                  className="w-14 h-14 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18" 
+                />
+              </div>
               <h3 className="text-xl font-semibold text-blue-800">{item.title}</h3>
               <p className="text-gray-600 mt-2">{item.description}</p>
             </motion.div>
           ))}
         </div>
       </section>
+      
       <section className="max-w-[1800px] mx-auto">
         <h2 className="text-3xl font-bold text-blue-800 text-center mb-10">
           SAP Resource Spotlight
@@ -194,7 +210,7 @@ const Resources = () => {
             },
             {
               title: 'SAP Integration Suite',
-              desc: 'Connect cloud, on-premise, and third-party systems seamlessly with SAP’s integration toolkit.',
+              desc: 'Connect cloud, on-premise, and third-party systems seamlessly with SAP s integration toolkit.',
               img: '/SAP Integration Suite.avif',
             },
             {
@@ -219,7 +235,7 @@ const Resources = () => {
                 />
               </div>
               <div className="p-5">
-                <h3 className="text-lg font-semibold text-blue-800 mb-2">{item.title}</h3>
+                <h3 className="text-lg font-semibold text-blue-800">{item.title}</h3>
                 <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
             </motion.div>
@@ -229,4 +245,5 @@ const Resources = () => {
     </div>
   );
 };
+
 export default Resources;
