@@ -53,7 +53,7 @@ const Footer = () => {
               <img
                 src="/Final-VS-logo-index.jpg"
                 alt="VSVS Logo"
-                className="h-16 w-auto mb-4 brightness-110"
+                className="h-16 w-auto mb-4 brightness-110 rounded-sm"
               />
             </Link>
             <p className="text-gray-300 mb-6">
