@@ -31,7 +31,7 @@ const Loader = () => {
     <div className="fixed inset-0 flex flex-col items-center justify-center bg-white">
       <div className="mb-8">
         <img 
-          src="/vsvs logo.jpg" 
+          src="/Final-VS-Logo.jpg" 
           alt="Company Logo" 
           className="h-16 w-auto"
         />
