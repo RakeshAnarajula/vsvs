@@ -46,12 +46,12 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-br from-blue-900 to-blue-950 text-white pt-16 pb-8 px-4">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-40">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
           <div className="lg:col-span-1">
             <Link to="/" className="block mb-4">
               <img
-                src="/vsvs logo.jpg"
+                src="/Final-VS-logo-index-Photoroom.png"
                 alt="VSVS Logo"
                 className="h-16 w-auto mb-4 brightness-110"
               />
