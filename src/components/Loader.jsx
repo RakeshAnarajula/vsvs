@@ -29,9 +29,9 @@ const Loader = () => {
   }, []); 
   return (
     <div className="fixed inset-0 flex flex-col items-center justify-center bg-white">
-      <div className="mb-8">
+      <div className="mb-8 scale-250">
         <img 
-          src="/waves-icon png.png" 
+          src="/Final logo 1.svg" 
           alt="Company Logo" 
           className="h-16 w-auto"
         />
