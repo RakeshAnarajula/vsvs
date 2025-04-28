@@ -51,9 +51,9 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <Link to="/" className="block mb-4">
               <img
-                src="/Final-VS-logo-index.jpg"
+                src="/waves-icon png.png"
                 alt="VSVS Logo"
-                className="h-16 w-auto mb-4 brightness-110 rounded-sm"
+                className="h-16 w-auto mb-4 brightness-110 rounded-sm bg-white"
               />
             </Link>
             <p className="text-gray-300 mb-6">
