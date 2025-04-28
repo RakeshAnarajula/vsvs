@@ -182,8 +182,8 @@ const Navbar = () => {
     <>
       <nav className={`bg-white fixed w-full top-0 left-0 right-0 z-50 text-blue-800 font-semibold ${scrolled ? "shadow-lg" : "shadow-md"}`}>
         <div className={`max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 ${getNavPadding()} flex justify-between items-center`}>
-          <div className="flex-shrink-0 cursor-pointer scale-250 pl-2" onClick={handleLogoClick}>
-            <img src="/Final logo 1.svg" alt="Logo" className={`${getLogoSize()} w-auto`} />
+          <div className="flex-shrink-0 cursor-pointer scale-120 pl-2" onClick={handleLogoClick}>
+            <img src="Final logo 1 footer.svg" alt="Logo" className={`${getLogoSize()} w-auto`} />
           </div>
           <div className="hidden lg:flex gap-4 xl:gap-6 items-center">
             <NavLink to="/">Home</NavLink>
@@ -225,8 +225,8 @@ const Navbar = () => {
                 className="fixed top-0 left-0 bottom-0 w-full md:hidden bg-white shadow-xl z-50 overflow-y-auto"
               >
                 <div className="flex justify-between items-center p-4 border-b">
-                  <div className="cursor-pointer scale-250 pl-2" onClick={handleLogoClick}>
-                    <img src="/Final logo 1.svg" alt="Logo" className={`${windowWidth <= 320 ? 'h-8' : 'h-10'} w-auto`} />
+                  <div className="cursor-pointer scale-120 pl-2" onClick={handleLogoClick}>
+                    <img src="Final logo 1 footer.svg" alt="Logo" className={`${windowWidth <= 320 ? 'h-8' : 'h-10'} w-auto`} />
                   </div>
                   <button onClick={closeMobileMenu} className="text-blue-800 p-1">
                     <X size={24} />
