@@ -91,7 +91,7 @@ const SAPAnalytics = () => {
               Predict future trends and identify key factors that influence business growth with SAP's predictive analytics tools.
             </p>
             <img
-              src="/Predictive Analytics.avif"
+              src="/Predictive Analytics.jpg"
               alt="Predictive Analytics"
               className="rounded-xl mt-6 w-full max-w-md md:max-w-sm mx-auto"
             />
@@ -108,7 +108,7 @@ const SAPAnalytics = () => {
               Utilize real-time data to drive smarter decisions across various departments like finance, sales, and marketing.
             </p>
             <img
-              src="/Data-Driven Decisions.avif"
+              src="/Data-Driven Decisions.jpg"
               alt="Data-Driven Decisions"
               className="rounded-xl mt-6 w-full max-w-md md:max-w-sm mx-auto"
             />
@@ -128,7 +128,7 @@ const SAPAnalytics = () => {
   <div className="flex flex-col md:flex-row items-center gap-8">
     <div className="w-full md:w-1/2">
       <img
-        src="/Interactive Data Visualizations.avif"
+        src="/Interactive Data Visualizations.jpg"
         alt="Data Visualization"
         className="rounded-xl shadow-xl w-full"
       />

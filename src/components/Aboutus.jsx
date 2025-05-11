@@ -46,7 +46,7 @@ export default function VisionMission() {
       >
         <div className="w-full md:w-1/2 grid grid-cols-2 grid-rows-2 gap-4">
           <img
-            src="/Business Intelligence & Analytics.avif"
+            src="/Business Intelligence & Analytics.jpg"
             alt="Mission 1"
             className="w-full h-52 md:h-66 lg:h-76 object-cover rounded-lg shadow-md row-span-2"
           />
@@ -56,7 +56,7 @@ export default function VisionMission() {
             className="w-full h-24 md:h-32 lg:h-36 object-cover rounded-lg shadow-md"
           />
           <img
-            src="/Automated Workflows.avif"
+            src="/Automated Workflows.jpg"
             alt="Mission 3"
             className="w-full h-24 md:h-32 lg:h-36 object-cover rounded-lg shadow-md"
           />

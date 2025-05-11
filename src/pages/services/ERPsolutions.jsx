@@ -92,22 +92,22 @@ const ERPSolutions = () => {
               desc: "Access ERP from anywhere with secure cloud-based platforms, ensuring flexibility and scalability."
             },
             {
-              img: "/Automated Workflows.avif",
+              img: "/Automated Workflows.jpg",
               title: "Automated Workflows",
               desc: "Reduce manual effort with automation across various business processes."
             },
             {
-              img: "/Improved Collaboration.avif",
+              img: "/Improved Collaboration.jpg",
               title: "Improved Collaboration",
               desc: "Enhance team collaboration with integrated communication tools and document management."
             },
             {
-              img: "/Robust Security.avif",
+              img: "/Robust Security.jpg",
               title: "Robust Security",
               desc: "Ensure the safety of your data with advanced encryption and security features."
             },
             {
-              img: "/Advanced Reporting.avif",
+              img: "/Advanced Reporting.jpg",
               title: "Advanced Reporting",
               desc: "Generate in-depth reports and dashboards to monitor performance and optimize operations."
             }

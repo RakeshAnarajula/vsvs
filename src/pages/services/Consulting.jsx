@@ -82,7 +82,7 @@ const SAPConsulting = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              img: "/consulting implementation.avif",
+              img: "/consulting implementation.jpg",
               title: "SAP Implementation",
               desc: "Seamless end-to-end SAP system implementation tailored to your business needs.",
             },
@@ -92,7 +92,7 @@ const SAPConsulting = () => {
               desc: "Ensure a smooth upgrade or migration to the latest SAP version with zero disruption.",
             },
             {
-              img: "/customation and integration.avif",
+              img: "/customation and integration.jpg",
               title: "Customization & Integration",
               desc: "Adapt SAP to fit your workflows and integrate it with third-party platforms or tools.",
             },
@@ -102,12 +102,12 @@ const SAPConsulting = () => {
               desc: "Comprehensive support to ensure your SAP system runs smoothly and securely.",
             },
             {
-              img: "/Training & Change Management.avif",
+              img: "/Training & Change Management.jpg",
               title: "Training & Change Management",
               desc: "Equip your teams with the skills and knowledge to use SAP efficiently.",
             },
             {
-              img: "/Business Intelligence & Analytics.avif",
+              img: "/Business Intelligence & Analytics.jpg",
               title: "Business Intelligence & Analytics",
               desc: "Leverage SAP tools to gain real-time insights and drive data-driven decisions.",
             },
@@ -146,7 +146,7 @@ const SAPConsulting = () => {
           <h2 className="text-3xl font-bold text-blue-900 mb-4 text-center">Why Partner With Us?</h2>
         </div>
         <img
-          src="/Why Partner With Us.avif"
+          src="/Why Partner With Us.jpg"
           alt="Benefits"
           className="rounded-xl shadow-xl w-full h-72 object-cover"
         />

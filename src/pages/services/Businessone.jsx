@@ -66,7 +66,7 @@ const SAPBusinessOne = () => {
     {
       name: "Financial Management",
       icon: <FaMoneyBillWave />,
-      image: "/financial.avif",
+      image: "/financial.jpg",
       description: "Comprehensive accounting, budgeting, and financial reporting tools for better fiscal management."
     },
     {
@@ -90,13 +90,13 @@ const SAPBusinessOne = () => {
     {
       name: "Production Planning",
       icon: <FaClipboardList />,
-      image: "/production and planning.avif",
+      image: "/production and planning.jpg",
       description: "Plan and execute manufacturing operations with precise material and resource management."
     },
     {
       name: "Business Intelligence",
       icon: <FaChartPie />,
-      image: "/business intelligence.avif",
+      image: "/business intelligence.jpg",
       description: "Transform data into actionable insights with powerful analytics and reporting capabilities."
     },
   ];
@@ -118,7 +118,7 @@ const SAPBusinessOne = () => {
           </p>
         </div>
         <img
-          src="/sap business.avif"
+          src="/sap business.jpg"
           alt="SAP Hero"
           className="rounded-2xl shadow-lg w-full h-56 md:h-64 lg:h-60 object-cover"
         />
@@ -196,7 +196,7 @@ const SAPBusinessOne = () => {
         </h2>
         <div className="order-2 md:order-1">
           <img
-            src="/sap why choose.avif"
+            src="/sap why choose.jpg"
             alt="Benefits"
             className="rounded-xl shadow-xl w-full h-64 object-cover"
           />

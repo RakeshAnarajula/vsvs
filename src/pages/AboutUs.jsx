@@ -28,7 +28,7 @@ const AboutUs = () => {
       >
         <div className="w-full md:w-1/2">
           <img
-            src="/our vision.avif"
+            src="/our vision.jpg"
             alt="Our Vision"
             className="w-full rounded-lg shadow-md"
           />
@@ -55,7 +55,7 @@ const AboutUs = () => {
       >
         <div className="w-full md:w-1/2 grid grid-cols-2 grid-rows-2 gap-4">
           <img
-            src="/our mission3.avif"
+            src="/our mission3.jpg"
             alt="Mission 1"
             className="w-full h-52 md:h-66 lg:h-76 object-cover rounded-lg shadow-md row-span-2"
           />
@@ -65,7 +65,7 @@ const AboutUs = () => {
             className="w-full h-24 md:h-32 lg:h-36 object-cover rounded-lg shadow-md"
           />
           <img
-            src="/Automated Workflows.avif"
+            src="/Automated Workflows.jpg"
             alt="Mission 3"
             className="w-full h-24 md:h-32 lg:h-36 object-cover rounded-lg shadow-md"
           />

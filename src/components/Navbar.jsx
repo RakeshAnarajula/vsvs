@@ -183,7 +183,7 @@ const Navbar = () => {
       <nav className={`bg-white fixed w-full top-0 left-0 right-0 z-50 text-blue-800 font-semibold ${scrolled ? "shadow-lg" : "shadow-md"}`}>
         <div className={`max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 ${getNavPadding()} flex justify-between items-center`}>
           <div className="flex-shrink-0 cursor-pointer scale-120 pl-2" onClick={handleLogoClick}>
-            <img src="Final logo 1 footer.svg" alt="Logo" className={`${getLogoSize()} w-auto`} />
+            <img src="/Final logo 1 footer.svg" alt="Logo" className={`${getLogoSize()} w-auto`} />
           </div>
           <div className="hidden lg:flex gap-4 xl:gap-6 items-center">
             <NavLink to="/">Home</NavLink>

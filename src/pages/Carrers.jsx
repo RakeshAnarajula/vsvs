@@ -7,7 +7,7 @@ const values = [
     description: 'We bring creative ERP and SAP ideas to life.',
   },
   {
-    img: '/Training & Change Management.avif',
+    img: '/Training & Change Management.jpg',
     title: 'Excellence',
     description: 'Committed to delivering top-quality solutions and service.',
   },
@@ -147,7 +147,7 @@ const Careers = () => {
         viewport={{ once: true }}
       >
         <motion.img
-          src="/Business Intelligence & Analytics.avif"
+          src="/Business Intelligence & Analytics.jpg"
           alt="Featured"
           className="w-full md:w-[35%] rounded-xl object-cover"
           transition={{ duration: 0.3 }}

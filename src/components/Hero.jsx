@@ -47,21 +47,21 @@ export default function Hero() {
     }
   }, []);
   const imageSet = [
-    "/consulting implementation.avif",
+    "/consulting implementation.jpg",
     "/consulting services.jpg",
     "/Cost Reduction.jpg",
-    "/customation and integration.avif",
+    "/customation and integration.jpg",
     "/Customizable Modules.jpg",
-    "/Data-Driven Decisions.avif",
-    "/Advanced Reporting.avif",
-    "/Automated Workflows.avif",
-    "/Business Intelligence & Analytics.avif",
+    "/Data-Driven Decisions.jpg",
+    "/Advanced Reporting.jpg",
+    "/Automated Workflows.jpg",
+    "/Business Intelligence & Analytics.jpg",
     "/Unlock Insights with SAP Analytics.jpg",
-    "/Training & Change Management.avif",
+    "/Training & Change Management.jpg",
     "/team work.jpg",
     "/system upgrade.jpg",
     "/support.jpg",
-    "/sap why choose.avif",
+    "/sap why choose.jpg",
   ];
 
   const renderMarqueeLanes = () => {
@@ -147,7 +147,7 @@ export default function Hero() {
   return (
     <div className="h-[90vh] w-full flex flex-col items-center justify-center px-6 py-10 overflow-hidden relative"> 
       {renderMarqueeLanes()}
-      <div className="absolute inset-0 bg-black opacity-85 z-20" />
+      <div className="absolute inset-0 bg-black opacity-70 z-20" />
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

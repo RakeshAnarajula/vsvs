@@ -6,7 +6,7 @@ const blogPosts = [
     title: 'Top 5 SAP Implementation Strategies in 2025',
     excerpt:
       'Discover the most effective approaches for implementing SAP solutions successfully in your organization.',
-    image: '/Automated Workflows.avif',
+    image: '/Automated Workflows.jpg',
     date: 'April 10, 2025',
   },
   {
@@ -14,7 +14,7 @@ const blogPosts = [
     title: 'How ERP Transforms Business Operations',
     excerpt:
       'Learn how modern ERP systems streamline operations, boost productivity, and enable real-time decision-making.',
-    image: '/Business Intelligence & Analytics.avif',
+    image: '/Business Intelligence & Analytics.jpg',
     date: 'March 28, 2025',
   },
   {
@@ -196,12 +196,12 @@ const Resources = () => {
             {
               title: 'S/4HANA Migration Hub',
               desc: 'Tools, best practices, and accelerators to move your legacy ERP to SAP S/4HANA with confidence.',
-              img: '/Migration Hub.avif',
+              img: '/Migration Hub.jpg',
             },
             {
               title: 'SAP Analytics Cloud',
               desc: 'Make real-time business decisions with smart dashboards, planning, and predictive analytics.',
-              img: '/SAP Analytics Cloud.avif',
+              img: '/SAP Analytics Cloud.jpg',
             },
             {
               title: 'Business Process Automation',
@@ -211,7 +211,7 @@ const Resources = () => {
             {
               title: 'SAP Integration Suite',
               desc: 'Connect cloud, on-premise, and third-party systems seamlessly with SAP s integration toolkit.',
-              img: '/SAP Integration Suite.avif',
+              img: '/SAP Integration Suite.jpg',
             },
             {
               title: 'Learning Journey: SAP BTP',

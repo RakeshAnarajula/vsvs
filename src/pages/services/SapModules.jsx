@@ -33,7 +33,7 @@ const SapModules = () => {
   const approachSteps = [
     {
       title: "1. Assessment",
-      img: "/implemantation assesment.avif",
+      img: "/implemantation assesment.jpg",
       desc: "Evaluate existing processes and define strategy.",
     },
     {
